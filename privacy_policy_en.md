@@ -7,7 +7,7 @@ lang: en
 
 # Privacy Policy — Birdsoniq
 
-**Last updated:** [TO BE FILLED IN UPON FIRST PUBLICATION]
+**Last updated:** 17 April 2026
 **Document version:** 1.0
 
 > The complete history of modifications to this Privacy Policy is publicly available on the document's git repository: `https://github.com/giovannisecci/birdsoniq-legal`. Each previous version remains verifiable and downloadable.

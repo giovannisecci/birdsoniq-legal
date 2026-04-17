@@ -7,7 +7,7 @@ lang: it
 
 # Termini di Servizio — Birdsoniq
 
-**Ultimo aggiornamento:** [DA COMPILARE ALLA PRIMA PUBBLICAZIONE]
+**Ultimo aggiornamento:** 17 aprile 2026
 **Versione documento:** 1.0
 
 > Lo storico completo delle modifiche a questi Termini di Servizio è pubblicamente consultabile sul repository git del documento: `https://github.com/giovannisecci/birdsoniq-legal`. Ogni versione precedente resta verificabile e scaricabile.
