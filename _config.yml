@@ -1,0 +1,20 @@
+title: Birdsoniq Legal
+description: Privacy Policy e Termini di Servizio ufficiali di Birdsoniq
+# Niente theme esterno: usiamo il layout custom in _layouts/default.html
+
+# Escludiamo il README dalla build (è solo per la pagina GitHub del repo)
+exclude:
+  - README.md
+  - guide_github_pages.md
+  - "*.dart"
+
+# Abilita plugins standard di GitHub Pages (permalink, sitemap, ecc.)
+plugins:
+  - jekyll-relative-links
+  - jekyll-sitemap
+
+# Fa sì che i link tipo [Privacy](privacy_policy_it.md) vengano
+# riscritti automaticamente in .html durante il build.
+relative_links:
+  enabled: true
+  collections: true
