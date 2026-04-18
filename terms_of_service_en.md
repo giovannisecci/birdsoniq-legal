@@ -1,14 +1,7 @@
----
-layout: default
-title: Terms of Service — Birdsoniq (EN)
-description: General terms of use for the Birdsoniq application.
-lang: en
----
-
 # Terms of Service — Birdsoniq
 
-**Last updated:** 17 April 2026
-**Document version:** 1.0
+**Last updated:** 19 April 2026
+**Document version:** 1.1
 
 > The complete history of modifications to these Terms of Service is publicly available on the document's git repository: `https://github.com/giovannisecci/birdsoniq-legal`. Each previous version remains verifiable and downloadable.
 
@@ -18,7 +11,7 @@ lang: en
 
 ## 1. Introduction and acceptance
 
-These Terms of Service (hereinafter "Terms") govern the use of the mobile application **Birdsoniq** (hereinafter "the app"), developed and operated by Giovanni Secci (hereinafter "the Provider"). By downloading, installing or using the app, the user (hereinafter "User") declares to have read, understood and fully accepted these Terms and the Birdsoniq [Privacy Policy](privacy_policy_en.html), which forms an integral part thereof.
+These Terms of Service (hereinafter "Terms") govern the use of the mobile application **Birdsoniq** (hereinafter "the app"), developed and operated by Giovanni Secci (hereinafter "the Provider"). By downloading, installing or using the app, the user (hereinafter "User") declares to have read, understood and fully accepted these Terms and the Birdsoniq [Privacy Policy](https://giovannisecci.github.io/birdsoniq-legal/privacy_policy_en.html), which forms an integral part thereof.
 
 If the User does not accept even one of these Terms, they are invited not to use the app and to uninstall it from their device.
 
@@ -28,14 +21,14 @@ If the User does not accept even one of these Terms, they are invited not to use
 
 For the purposes of these Terms:
 
-- **"App"** or **"Birdsoniq"**: the mobile application for the identification of bird species via artificial intelligence, in its various modes of use.
-- **"Provider"**: Giovanni Secci, owner of the app, with the contact details indicated in §21.
-- **"User"**: any natural person who installs, uses or accesses the app.
-- **"Service"**: the set of functionalities offered by Birdsoniq, including content, identification functions, community, third-party integrations and the Gold subscription.
-- **"Gold Subscription"**: the paid service that unlocks advanced app features, purchasable exclusively through Google Play Billing.
-- **"User Content"**: any content (observations, photographs, audio recordings, comments) that the User uploads or publishes through the app.
-- **"Community"**: the feature that allows Users to voluntarily share their observations with other Users of the same app.
-- **"Italian Consumer Code"**: Legislative Decree no. 206 of 6 September 2005, as subsequently amended.
+* **"App"** or **"Birdsoniq"**: the mobile application for the identification of bird species via artificial intelligence, in its various modes of use.
+* **"Provider"**: Giovanni Secci, owner of the app, with the contact details indicated in §21.
+* **"User"**: any natural person who installs, uses or accesses the app.
+* **"Service"**: the set of functionalities offered by Birdsoniq, including content, identification functions, community, third-party integrations and the Gold subscription.
+* **"Gold Subscription"**: the paid service that unlocks advanced app features, purchasable exclusively through Google Play Billing.
+* **"User Content"**: the textual and numeric metadata of the observations that the User chooses to publish through the community feature (identified species, date, GPS coordinates, confidence level), as well as any textual comments published. **Multimedia files (audio recordings, photographs) associated with observations always remain on the User's device and do not constitute User Content for the purposes of these Terms**: they are not transmitted to the Provider nor published in the community.
+* **"Community"**: the feature that allows Users to voluntarily share the metadata of their observations with other Users of the same app ("metadata-only" architecture).
+* **"Italian Consumer Code"**: Legislative Decree no. 206 of 6 September 2005, as subsequently amended.
 
 ---
 
@@ -43,15 +36,15 @@ For the purposes of these Terms:
 
 Birdsoniq is an application dedicated to birdwatching and the identification of bird species. The main features offered are:
 
-- **Photo identification**: the User can photograph a bird or select a photo from the gallery, and the app suggests the most likely species through an artificial intelligence model executed on the device.
-- **Audio identification**: the User can record the song or call of a bird, and the app analyzes the sound to identify the species via on-device AI model.
-- **Field guide**: access to information sheets for thousands of bird species, with photos, descriptions, distribution maps, audio recordings and conservation status.
-- **History and statistics**: personal record of observations, with usage statistics, badges and gamification elements.
-- **Community**: ability to voluntarily share one's observations with other Users.
-- **Kids Mode**: a simplified and visually engaging interface, suitable for any User aged 16 or over (see §10).
-- **Host Mode**: additional features designed for hospitality establishments (B&Bs, farmhouses, summer camps, associations) hosting groups of birdwatchers (see §9).
-- **eBird export**: local generation of CSV files compatible with the eBird Record Format.
-- **Optional integrations**: the User can configure their own free API keys to access additional features of third-party services such as eBird (Cornell Lab of Ornithology) and IUCN Red List (see §14).
+* **Photo identification**: the User can photograph a bird or select a photo from the gallery, and the app suggests the most likely species through an artificial intelligence model executed on the device. The photo never leaves the device.
+* **Audio identification**: the User can record the song or call of a bird, and the app analyzes the sound to identify the species via on-device AI model. The audio recording never leaves the device.
+* **Field guide**: access to information sheets for thousands of bird species, with photos, descriptions, distribution maps, audio recordings and conservation status.
+* **History and statistics**: personal record of observations, with usage statistics, badges and gamification elements.
+* **"Metadata-only" community**: ability to voluntarily share the metadata of one's observations (species, date, GPS, confidence) with other Users. Audio and photos are never uploaded.
+* **Kids Mode**: a simplified and visually engaging interface, suitable for any User aged 16 or over (see §10).
+* **Host Mode**: additional features designed for hospitality establishments (B&Bs, farmhouses, summer camps, associations) hosting groups of birdwatchers (see §9).
+* **eBird export**: local generation of CSV files compatible with the eBird Record Format.
+* **Optional integrations**: the User can configure their own free API keys to access additional features of third-party services such as eBird (Cornell Lab of Ornithology) and IUCN Red List (see §14).
 
 The list of features may change over time based on app development. The Provider reserves the right to add, modify or remove features, subject to notice to the User in cases provided for by applicable law.
 
@@ -67,9 +60,9 @@ The app is intended for Users aged **16 years or older**. Installation and use o
 
 To use Birdsoniq, the User must have:
 
-- a compatible Android device (minimum version indicated on the app's Google Play Store page);
-- sufficient storage space for the installation of the app and identification models (approximately 200–300 MB);
-- an active Internet connection for the initial download and for some online features (community, maps, enriched species cards). Many main features — including photo and audio identification — still work offline once the data pack for one's region has been downloaded.
+* a compatible Android device (minimum version indicated on the app's Google Play Store page);
+* sufficient storage space for the installation of the app and identification models (approximately 200–300 MB);
+* an active Internet connection for the initial download and for some online features (community, maps, enriched species cards). Many main features — including photo and audio identification — still work offline once the data pack for one's region has been downloaded.
 
 The Provider does not guarantee the correct operation of the app on modified devices (root, custom ROM), emulators or non-standard configurations.
 
@@ -81,7 +74,7 @@ Birdsoniq does not require registration, login, email or password. Each installa
 
 The User acknowledges that, in the absence of an authentication system, each device constitutes a distinct identity from the system's point of view, and that installing the app on a new device generates a new installId unrelated to the previous one. Features that depend on identity (personal history, Gold subscription, published community content) are tied to the individual device.
 
-To manage User rights regarding personal data protection (access, deletion, etc.), please refer to the [Privacy Policy](privacy_policy_en.html), §9.
+To manage User rights regarding personal data protection (access, deletion, etc.), please refer to the [Privacy Policy](https://giovannisecci.github.io/birdsoniq-legal/privacy_policy_en.html), §9.
 
 ---
 
@@ -91,13 +84,13 @@ To manage User rights regarding personal data protection (access, deletion, etc.
 
 The Gold Subscription is a paid service that unlocks some advanced app features, including:
 
-- unlimited observation history with cloud synchronization;
-- GPS map of personal history;
-- access to community features (publishing observations, comments, validations);
-- CSV export of one's list of observed species;
-- notifications of rare species nearby;
-- advanced statistics;
-- "Gold Validator" badge in the community.
+* unlimited observation history with cloud synchronization (textual metadata only; audio and photos remain on the device);
+* GPS map of personal history;
+* access to community features (publishing observation metadata, comments, validations);
+* CSV export of one's list of observed species;
+* notifications of rare species nearby;
+* advanced statistics;
+* "Gold Validator" badge in the community.
 
 The list of features included in the Gold Subscription may be updated over time. Any substantial changes (removal of previously included features) will be communicated to subscribers in advance, with the right for the User to withdraw pursuant to §6.4.
 
@@ -151,15 +144,15 @@ The app is intended for personal, non-commercial use (except as provided for Hos
 
 The User undertakes to **not**:
 
-- use the app or its contents for illegal, fraudulent or rights-infringing purposes;
-- attempt to decompile, reverse engineer, disassemble the app or the artificial intelligence models contained therein, except in cases expressly permitted by copyright law;
-- copy, extract, duplicate or redistribute data, photos, audio recordings or texts from the scientific sources integrated into the app (GBIF, iNaturalist, Wikipedia, Xeno-canto, IUCN, eBird) in violation of their respective licenses;
-- publish in the community content that is illegal, defamatory, offensive, vulgar, racist, sexist, that violates the rights of others, or that is not relevant to the topic of ornithology and birdwatching;
-- publish false, deliberately erroneous, manipulated observations or created with the intent of polluting the community's scientific data;
-- use bots or automated systems to interact with the app or with Firebase services or integrated third parties;
-- resell, distribute or sublicense the app or parts thereof;
-- use the app to locate, stalk or monitor other people;
-- use the app for poaching, illegal bird capture or other activities prohibited by Italian, European and international environmental and wildlife legislation (in particular Directive 2009/147/EC and Italian Law 157/1992).
+* use the app or its contents for illegal, fraudulent or rights-infringing purposes;
+* attempt to decompile, reverse engineer, disassemble the app or the artificial intelligence models contained therein, except in cases expressly permitted by copyright law;
+* copy, extract, duplicate or redistribute data, photos, audio recordings or texts from the scientific sources integrated into the app (GBIF, iNaturalist, Wikipedia, Xeno-canto, IUCN, eBird) in violation of their respective licenses;
+* publish in the community (in the observation metadata or in comments) content that is illegal, defamatory, offensive, vulgar, racist, sexist, that violates the rights of others, or that is not relevant to the topic of ornithology and birdwatching;
+* publish false, deliberately erroneous, manipulated observations or created with the intent of polluting the community's scientific data;
+* use bots or automated systems to interact with the app or with Firebase services or integrated third parties;
+* resell, distribute or sublicense the app or parts thereof;
+* use the app to locate, stalk or monitor other people;
+* use the app for poaching, illegal bird capture or other activities prohibited by Italian, European and international environmental and wildlife legislation (in particular Directive 2009/147/EC and Italian Law 157/1992).
 
 ### 7.3 Consequences of prohibited use
 
@@ -169,18 +162,29 @@ Violation of the provisions of this §7 entitles the Provider to suspend or term
 
 ## 8. User-generated content
 
-### 8.1 Ownership of User Content
+### 8.1 Scope of User Content
 
-The User retains **all intellectual property rights** on the User Content (observations, photographs, audio recordings, comments) that they upload or publish through the app. Birdsoniq does not claim ownership over such content.
+For the purposes of these Terms, "User Content" consists exclusively of the **textual and numeric metadata** that the User chooses to publish through the community feature:
 
-### 8.2 License granted to the Provider
+* scientific and common name of the identified species;
+* date and time of the observation;
+* GPS coordinates of the sighting;
+* recognition confidence level;
+* source of the identification (photo, audio, or combined);
+* any textual comments associated with an observation.
 
-By publishing User Content in the community or activating sharing with scientific research, the User grants the Provider a **non-exclusive, free, worldwide, transferable and sub-licensable license** to:
+**Photographs and audio recordings possibly used by the User for identification do not constitute User Content for the purposes of these Terms**, as such files always remain on the User's device and are never transmitted to the Provider or published in the community. Consistently, no provision of these Terms may be construed as a license, assignment or transfer of rights over User photographs or audio recordings.
 
-- store, reproduce, publish and display User Content within the app (community feed);
-- make User Content available to other Users of the app viewing the community feed;
-- perform backups and technical operations necessary for the operation of the service (storage on Firebase Storage and Firestore);
-- if the User has activated the "Share with scientific research" feature, transmit the User Content in aggregated or pseudonymized form to accredited ornithological research entities.
+The User retains **all intellectual property rights** on the published User Content. Birdsoniq does not claim ownership over such content.
+
+### 8.2 License granted to the Provider on User Content
+
+By publishing User Content (as defined in §8.1) in the community, the User grants the Provider a **non-exclusive, free, worldwide, transferable and sub-licensable license** to:
+
+* store, reproduce, publish and display User Content within the app (community feed);
+* make User Content available to other Users of the app viewing the community feed;
+* perform backups and technical operations necessary for the operation of the service (storage on Firebase Firestore);
+* use User Content in aggregated or pseudonymized form for statistical, scientific research or dissemination purposes, where permitted by applicable law.
 
 This license has a duration coinciding with the publication of the content in the app. The revocation of consent to community sharing or the deletion of the content by the User cause the license to cease for future content, but do not prevent the Provider from retaining backup copies for the time strictly necessary and for purposes of compliance with legal obligations.
 
@@ -188,10 +192,9 @@ This license has a duration coinciding with the publication of the content in th
 
 The User is **solely responsible** for the User Content they publish and declares:
 
-- to be the owner of all the rights necessary on the content (in particular: to be the author of the photographs and audio recordings uploaded, or to have the right to them by other means);
-- to have obtained any consents required from third parties portrayed or recorded (persons, identifiable private properties);
-- not to violate any intellectual property right, image right, privacy right, or other third-party right through the content;
-- to guarantee the truthfulness and accuracy of the published observation data (identified species, date, place).
+* to guarantee the truthfulness and accuracy of the published observation data (identified species, date, place);
+* not to publish metadata or comments that violate third-party rights, intellectual property rights, privacy rights, or other legal provisions;
+* to have obtained any consents required from third parties for the publication of GPS coordinates of non-public places (private properties, identifiable dwellings).
 
 The User shall indemnify the Provider from any claim, compensation request or legal action by third parties arising from the violation of the declarations in this paragraph.
 
@@ -209,17 +212,17 @@ Host Mode is an additional feature designed for Users who manage hospitality est
 
 Activation of Host Mode involves:
 
-- entering the name of the establishment, used locally to customize the interface and to include the name in the PDF reports generated;
-- the ability to generate QR codes for the species observed at the establishment (printable, useful for educational signs);
-- the local generation of monthly PDF reports with observed species, birdwatching sessions and aggregated statistics;
-- a "group session" function with shareable numerical code, currently in experimental phase and without synchronization between different devices.
+* entering the name of the establishment, used locally to customize the interface and to include the name in the PDF reports generated;
+* the ability to generate QR codes for the species observed at the establishment (printable, useful for educational signs);
+* the local generation of monthly PDF reports with observed species, birdwatching sessions and aggregated statistics;
+* a "group session" function with shareable numerical code, currently in experimental phase and without synchronization between different devices.
 
 **Responsibility of the establishment manager.** The User who activates Host Mode and allows guests or participants to use the app installed on the establishment's device (shared tablet, etc.) is **fully responsible**:
 
-- for adequately informing guests/participants of the presence of the app and its functionalities;
-- for obtaining any consents required by privacy legislation for the use of the app's functions by third parties (in particular if the guests are minors — for whom, in any case, use of the app remains limited to Users aged 16 or over, pursuant to §4.1);
-- for overseeing the content published in the community through the establishment's device;
-- for complying with the advertising, tax and administrative obligations of their own activity, none of which are the subject of these Terms or of the Birdsoniq service.
+* for adequately informing guests/participants of the presence of the app and its functionalities;
+* for obtaining any consents required by privacy legislation for the use of the app's functions by third parties (in particular if the guests are minors — for whom, in any case, use of the app remains limited to Users aged 16 or over, pursuant to §4.1);
+* for overseeing the content published in the community through the establishment's device;
+* for complying with the advertising, tax and administrative obligations of their own activity, none of which are the subject of these Terms or of the Birdsoniq service.
 
 The Provider does not carry out any checks on the establishments that use Host Mode, has no particular contractual relationships with them and does not guarantee the suitability of the app for specific commercial uses of the establishment. Host Mode is provided "as is" without guarantees other than those provided for the app as a whole.
 
@@ -245,20 +248,20 @@ Birdsoniq uses artificial intelligence models to suggest the identification of b
 
 Identification results are **probabilistic suggestions** based on statistical machine learning models. Each result is accompanied by a confidence index expressed as a percentage. **Identification models may be wrong**, even significantly, especially in the case of:
 
-- low-quality audio recordings or with background noise;
-- photographs taken in difficult lighting conditions, with a distant, blurred or partially hidden subject;
-- species similar to each other (subspecies, sibling species);
-- rare species, poorly represented in the training datasets of the models;
-- species outside the usual geographical range.
+* low-quality audio recordings or with background noise;
+* photographs taken in difficult lighting conditions, with a distant, blurred or partially hidden subject;
+* species similar to each other (subspecies, sibling species);
+* rare species, poorly represented in the training datasets of the models;
+* species outside the usual geographical range.
 
 ### 11.2 No scientific or professional guarantee
 
 Birdsoniq's identification results **do not constitute certified scientific identification** nor can they replace the opinion of an expert professional ornithologist, an accredited research entity or a competent authority. The User must not use the app's results as the sole basis for critical decisions, including, by way of example but not limited to:
 
-- protected species conservation decisions;
-- naturalistic appraisals or environmental impact assessments;
-- hunting, capture or activities regulated by wildlife legislation;
-- official reports to research entities or public administrations as the sole probative sources.
+* protected species conservation decisions;
+* naturalistic appraisals or environmental impact assessments;
+* hunting, capture or activities regulated by wildlife legislation;
+* official reports to research entities or public administrations as the sole probative sources.
 
 For uses that have scientific, environmental or legal relevance, the User is required to have the identification validated by a competent expert.
 
@@ -280,8 +283,8 @@ Downloading and installing the app grant the User a **personal, non-exclusive, n
 
 The machine learning models used by the app for identification are:
 
-- **BirdNET v2.4**, developed by the Cornell Lab of Ornithology (Cornell University) in collaboration with Chemnitz University of Technology, used for audio identification;
-- **EfficientNet Birds** (also known as AIY Birds V1), developed by Google, used for photo identification.
+* **BirdNET v2.4**, developed by the Cornell Lab of Ornithology (Cornell University) in collaboration with Chemnitz University of Technology, used for audio identification;
+* **EfficientNet Birds** (also known as AIY Birds V1), developed by Google, used for photo identification.
 
 These models are used under their respective public distribution licenses (Creative Commons and equivalent open-source licenses) and remain the property of their respective owners. Birdsoniq does not claim any ownership rights over these models.
 
@@ -305,11 +308,11 @@ Birdsoniq offers optional integrations with some third-party services (in partic
 
 The User acknowledges that:
 
-- API keys are free and obtainable directly from the third-party service website (`https://ebird.org/api/keygen` for eBird; `https://apiv3.iucnredlist.org/api/v3/token` or equivalent endpoint for IUCN);
-- registration with the third-party service is governed by the terms of service and the privacy policy of the third-party service, over which the Provider has no control;
-- use of the integrated functionality involves the transmission of data to the third-party service (in the case of eBird: User's GPS coordinates, API key and scientific name of species);
-- the Provider is not responsible for any malfunctions, limitations or interruptions of the third-party service;
-- compliance with the third-party service's terms of service (in particular with respect to API usage limits) is the sole responsibility of the User, who has activated the integration with their own key.
+* API keys are free and obtainable directly from the third-party service website (`https://ebird.org/api/keygen` for eBird; `https://apiv3.iucnredlist.org/api/v3/token` or equivalent endpoint for IUCN);
+* registration with the third-party service is governed by the terms of service and the privacy policy of the third-party service, over which the Provider has no control;
+* use of the integrated functionality involves the transmission of data to the third-party service (in the case of eBird: User's GPS coordinates, API key and scientific name of species);
+* the Provider is not responsible for any malfunctions, limitations or interruptions of the third-party service;
+* compliance with the third-party service's terms of service (in particular with respect to API usage limits) is the sole responsibility of the User, who has activated the integration with their own key.
 
 ---
 
@@ -341,10 +344,10 @@ The Provider is not responsible for missed performances due to force majeure eve
 
 The User undertakes to indemnify and hold the Provider harmless from any claim, request, legal action, costs (including reasonable legal fees) that third parties should advance as a consequence of:
 
-- violation of these Terms by the User;
-- violation by the User of third-party rights (in particular intellectual property rights, image rights, privacy rights) through the User Content published;
-- use of the app in violation of applicable law;
-- false or inaccurate declarations made by the User in the context of the use of the app or its User Content.
+* violation of these Terms by the User;
+* violation by the User of third-party rights (in particular intellectual property rights, image rights, privacy rights) through the User Content published;
+* use of the app in violation of applicable law;
+* false or inaccurate declarations made by the User in the context of the use of the app or its User Content.
 
 ---
 
@@ -358,6 +361,8 @@ Changes to the Terms take effect upon publication of the new version of the docu
 
 The **complete history** of the versions of the Terms of Service is publicly available on the document's git repository at the address indicated at the top of this document.
 
+**Main changes in version 1.1 (19 April 2026):** update of the definition of "User Content" (§2 and §8.1) and of the relevant license regime (§8.2) to reflect the transition to a "metadata-only" community architecture: User photographs and audio recordings are no longer transmitted to the Provider or included in User Content, and always remain on the device. Updated sections: §2, §3, §6.1, §7.2, §8.1, §8.2, §8.3.
+
 ---
 
 ## 18. Suspension and termination of the service
@@ -370,9 +375,9 @@ The User may cease the use of the app at any time by uninstalling it from their 
 
 The Provider reserves the right to suspend or terminate the User's access to the app in the following cases:
 
-- serious or repeated violation of these Terms by the User;
-- fraudulent, abusive or illegal use of the app;
-- legal obligation or order of the competent authority.
+* serious or repeated violation of these Terms by the User;
+* fraudulent, abusive or illegal use of the app;
+* legal obligation or order of the competent authority.
 
 In case of termination for reasons attributable to the User, no refund is due, except as provided by mandatory consumer legislation.
 
@@ -380,8 +385,8 @@ In case of termination for reasons attributable to the User, no refund is due, e
 
 The Provider reserves the right to cease the provision of the Birdsoniq service, in whole or in part, with at least **60 days' notice** to Users through in-app notice and publication on the `birdsoniq.app` website. In this case:
 
-- Users with an active Gold Subscription will be granted a proportional refund of the remaining unused period, unless otherwise agreed;
-- User data will be managed as provided for in the Privacy Policy, with the guarantee of the possibility of exporting one's observations in advance through the eBird export function or other equivalent.
+* Users with an active Gold Subscription will be granted a proportional refund of the remaining unused period, unless otherwise agreed;
+* User data will be managed as provided for in the Privacy Policy, with the guarantee of the possibility of exporting one's observations in advance through the eBird export function or other equivalent.
 
 ---
 
@@ -434,7 +439,7 @@ This document is drafted in Italian (`terms_of_service_it.md`), which prevails i
 **Provider:** Giovanni Secci
 **Address:** Via Baccarini, 08100 Nuoro (NU), Italy
 **Email (support, complaints, copyright, legal matters):** giovannisecci72@gmail.com
-**VAT number:** [IT__________ — pending activation]
+**VAT number:** [IT\_\_**\_\_**\_\_ — pending activation]
 
 For any matters relating to these Terms of Service, the use of the app or the subscription, the User may write to the email address indicated above. The Provider undertakes to respond within a reasonable time (usually within 10 working days).
 

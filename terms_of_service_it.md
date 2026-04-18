@@ -1,14 +1,7 @@
----
-layout: default
-title: Termini di Servizio — Birdsoniq (IT)
-description: Condizioni generali di utilizzo dell'applicazione Birdsoniq.
-lang: it
----
-
 # Termini di Servizio — Birdsoniq
 
-**Ultimo aggiornamento:** 17 aprile 2026
-**Versione documento:** 1.0
+**Ultimo aggiornamento:** 19 aprile 2026
+**Versione documento:** 1.1
 
 > Lo storico completo delle modifiche a questi Termini di Servizio è pubblicamente consultabile sul repository git del documento: `https://github.com/giovannisecci/birdsoniq-legal`. Ogni versione precedente resta verificabile e scaricabile.
 
@@ -16,7 +9,7 @@ lang: it
 
 ## 1. Introduzione e accettazione
 
-I presenti Termini di Servizio (di seguito "Termini") disciplinano l'utilizzo dell'applicazione mobile **Birdsoniq** (di seguito "l'app"), sviluppata e gestita da Giovanni Secci (di seguito "il Fornitore"). Scaricando, installando o utilizzando l'app, l'utente (di seguito "Utente") dichiara di aver letto, compreso e accettato integralmente i presenti Termini e la [Privacy Policy](privacy_policy_it.html) di Birdsoniq, che ne forma parte integrante.
+I presenti Termini di Servizio (di seguito "Termini") disciplinano l'utilizzo dell'applicazione mobile **Birdsoniq** (di seguito "l'app"), sviluppata e gestita da Giovanni Secci (di seguito "il Fornitore"). Scaricando, installando o utilizzando l'app, l'utente (di seguito "Utente") dichiara di aver letto, compreso e accettato integralmente i presenti Termini e la [Privacy Policy](https://giovannisecci.github.io/birdsoniq-legal/privacy_policy_it.html) di Birdsoniq, che ne forma parte integrante.
 
 Qualora l'Utente non accetti anche uno solo dei presenti Termini, è invitato a non utilizzare l'app e a disinstallarla dal proprio dispositivo.
 
@@ -26,14 +19,14 @@ Qualora l'Utente non accetti anche uno solo dei presenti Termini, è invitato a 
 
 Ai fini dei presenti Termini:
 
-- **"App"** o **"Birdsoniq"**: l'applicazione mobile per l'identificazione di specie di uccelli tramite intelligenza artificiale, nelle sue varie modalità d'uso.
-- **"Fornitore"**: Giovanni Secci, titolare dell'app, con i recapiti indicati nel §21.
-- **"Utente"**: qualunque persona fisica che installa, utilizza o accede all'app.
-- **"Servizio"**: l'insieme delle funzionalità offerte da Birdsoniq, inclusi i contenuti, le funzioni di identificazione, la community, le integrazioni con servizi terzi e l'abbonamento Gold.
-- **"Abbonamento Gold"**: il servizio a pagamento che sblocca funzionalità avanzate dell'app, acquistabile esclusivamente tramite Google Play Billing.
-- **"Contenuti Utente"**: qualsiasi contenuto (osservazioni, fotografie, registrazioni audio, commenti) che l'Utente carica o pubblica attraverso l'app.
-- **"Community"**: la funzione che permette agli Utenti di condividere volontariamente le proprie osservazioni con altri Utenti della stessa app.
-- **"Codice del Consumo"**: il Decreto Legislativo 6 settembre 2005 n. 206, come successivamente modificato.
+* **"App"** o **"Birdsoniq"**: l'applicazione mobile per l'identificazione di specie di uccelli tramite intelligenza artificiale, nelle sue varie modalità d'uso.
+* **"Fornitore"**: Giovanni Secci, titolare dell'app, con i recapiti indicati nel §21.
+* **"Utente"**: qualunque persona fisica che installa, utilizza o accede all'app.
+* **"Servizio"**: l'insieme delle funzionalità offerte da Birdsoniq, inclusi i contenuti, le funzioni di identificazione, la community, le integrazioni con servizi terzi e l'abbonamento Gold.
+* **"Abbonamento Gold"**: il servizio a pagamento che sblocca funzionalità avanzate dell'app, acquistabile esclusivamente tramite Google Play Billing.
+* **"Contenuti Utente"**: i metadati testuali e numerici delle osservazioni che l'Utente sceglie di pubblicare tramite la funzione community (specie identificata, data, coordinate GPS, livello di confidenza), nonché eventuali commenti testuali pubblicati. **I file multimediali (registrazioni audio, fotografie) associati alle osservazioni restano sempre sul dispositivo dell'Utente e non costituiscono Contenuti Utente ai fini dei presenti Termini**: non vengono trasmessi al Fornitore né pubblicati nella community.
+* **"Community"**: la funzione che permette agli Utenti di condividere volontariamente i metadati delle proprie osservazioni con altri Utenti della stessa app (architettura "metadata-only").
+* **"Codice del Consumo"**: il Decreto Legislativo 6 settembre 2005 n. 206, come successivamente modificato.
 
 ---
 
@@ -41,15 +34,15 @@ Ai fini dei presenti Termini:
 
 Birdsoniq è un'applicazione dedicata al birdwatching e all'identificazione di specie di uccelli. Le principali funzionalità offerte sono:
 
-- **Identificazione tramite fotografia**: l'Utente può fotografare un uccello o selezionare una foto dalla galleria, e l'app suggerisce le specie più probabili mediante un modello di intelligenza artificiale eseguito sul dispositivo.
-- **Identificazione tramite audio**: l'Utente può registrare il canto o il richiamo di un uccello, e l'app analizza il suono per identificare la specie tramite modello AI on-device.
-- **Guida di campo**: accesso a schede informative di migliaia di specie di uccelli, con foto, descrizioni, mappe di distribuzione, registrazioni audio e stato di conservazione.
-- **Cronologia e statistiche**: registro personale delle osservazioni, con statistiche di utilizzo, badge e elementi di gamification.
-- **Community**: possibilità di condividere volontariamente le proprie osservazioni con altri Utenti.
-- **Modalità Kids**: un'interfaccia semplificata e visivamente accattivante, adatta a qualsiasi Utente di età pari o superiore a 16 anni (v. §10).
-- **Modalità Host**: funzionalità aggiuntive pensate per strutture ricettive (B&B, agriturismi, colonie, associazioni) che ospitano gruppi di birdwatcher (v. §9).
-- **Esportazione eBird**: generazione locale di file CSV compatibili con il formato eBird Record Format.
-- **Integrazioni opzionali**: l'Utente può configurare proprie chiavi API gratuite per accedere a funzionalità aggiuntive di servizi terzi quali eBird (Cornell Lab of Ornithology) e IUCN Red List (v. §14).
+* **Identificazione tramite fotografia**: l'Utente può fotografare un uccello o selezionare una foto dalla galleria, e l'app suggerisce le specie più probabili mediante un modello di intelligenza artificiale eseguito sul dispositivo. La foto non lascia mai il dispositivo.
+* **Identificazione tramite audio**: l'Utente può registrare il canto o il richiamo di un uccello, e l'app analizza il suono per identificare la specie tramite modello AI on-device. La registrazione audio non lascia mai il dispositivo.
+* **Guida di campo**: accesso a schede informative di migliaia di specie di uccelli, con foto, descrizioni, mappe di distribuzione, registrazioni audio e stato di conservazione.
+* **Cronologia e statistiche**: registro personale delle osservazioni, con statistiche di utilizzo, badge e elementi di gamification.
+* **Community "metadata-only"**: possibilità di condividere volontariamente i metadati delle proprie osservazioni (specie, data, GPS, confidenza) con altri Utenti. Audio e foto non vengono mai caricati.
+* **Modalità Kids**: un'interfaccia semplificata e visivamente accattivante, adatta a qualsiasi Utente di età pari o superiore a 16 anni (v. §10).
+* **Modalità Host**: funzionalità aggiuntive pensate per strutture ricettive (B&B, agriturismi, colonie, associazioni) che ospitano gruppi di birdwatcher (v. §9).
+* **Esportazione eBird**: generazione locale di file CSV compatibili con il formato eBird Record Format.
+* **Integrazioni opzionali**: l'Utente può configurare proprie chiavi API gratuite per accedere a funzionalità aggiuntive di servizi terzi quali eBird (Cornell Lab of Ornithology) e IUCN Red List (v. §14).
 
 L'elenco delle funzionalità può variare nel tempo in base allo sviluppo dell'app. Il Fornitore si riserva il diritto di aggiungere, modificare o rimuovere funzionalità, previa comunicazione all'Utente nei casi previsti dalla normativa applicabile.
 
@@ -65,9 +58,9 @@ L'app è destinata a Utenti di età pari o superiore a **16 anni**. L'installazi
 
 Per utilizzare Birdsoniq, l'Utente deve disporre di:
 
-- un dispositivo Android compatibile (versione minima indicata nella pagina Google Play Store dell'app);
-- spazio di archiviazione sufficiente per l'installazione dell'app e dei modelli di identificazione (circa 200–300 MB);
-- una connessione Internet attiva per il download iniziale e per alcune funzionalità online (community, mappe, schede specie enriched). Molte funzionalità principali — inclusa l'identificazione tramite foto e audio — funzionano comunque anche offline una volta scaricato il pacchetto dati della propria regione.
+* un dispositivo Android compatibile (versione minima indicata nella pagina Google Play Store dell'app);
+* spazio di archiviazione sufficiente per l'installazione dell'app e dei modelli di identificazione (circa 200–300 MB);
+* una connessione Internet attiva per il download iniziale e per alcune funzionalità online (community, mappe, schede specie enriched). Molte funzionalità principali — inclusa l'identificazione tramite foto e audio — funzionano comunque anche offline una volta scaricato il pacchetto dati della propria regione.
 
 Il Fornitore non garantisce il corretto funzionamento dell'app su dispositivi modificati (root, custom ROM), emulatori o configurazioni non standard.
 
@@ -79,7 +72,7 @@ Birdsoniq non richiede registrazione, login, email o password. Ogni installazion
 
 L'Utente prende atto che, in assenza di un sistema di autenticazione, ogni dispositivo costituisce un'identità distinta agli occhi del sistema, e che l'installazione dell'app su un nuovo dispositivo genera un nuovo installId non collegato a quello precedente. Le funzionalità che dipendono dall'identità (cronologia personale, abbonamento Gold, contenuti community pubblicati) sono legate al singolo dispositivo.
 
-Per gestire i diritti dell'Utente in materia di protezione dei dati personali (accesso, cancellazione, ecc.), si rinvia alla [Privacy Policy](privacy_policy_it.html), §9.
+Per gestire i diritti dell'Utente in materia di protezione dei dati personali (accesso, cancellazione, ecc.), si rinvia alla [Privacy Policy](https://giovannisecci.github.io/birdsoniq-legal/privacy_policy_it.html), §9.
 
 ---
 
@@ -89,13 +82,13 @@ Per gestire i diritti dell'Utente in materia di protezione dei dati personali (a
 
 L'Abbonamento Gold è un servizio a pagamento che sblocca alcune funzionalità avanzate dell'app, tra cui:
 
-- cronologia illimitata delle osservazioni con sincronizzazione su cloud;
-- mappa GPS della cronologia personale;
-- accesso alle funzionalità community (pubblicazione osservazioni, commenti, validazioni);
-- esportazione in formato CSV della propria lista di specie osservate;
-- notifiche di specie rare nelle vicinanze;
-- statistiche avanzate;
-- badge "Validatore Gold" nella community.
+* cronologia illimitata delle osservazioni con sincronizzazione su cloud (solo metadati testuali; audio e foto restano sul dispositivo);
+* mappa GPS della cronologia personale;
+* accesso alle funzionalità community (pubblicazione dei metadati delle osservazioni, commenti, validazioni);
+* esportazione in formato CSV della propria lista di specie osservate;
+* notifiche di specie rare nelle vicinanze;
+* statistiche avanzate;
+* badge "Validatore Gold" nella community.
 
 L'elenco delle funzionalità incluse nell'Abbonamento Gold può essere aggiornato nel tempo. Eventuali modifiche sostanziali (rimozione di funzionalità precedentemente incluse) saranno comunicate agli abbonati in anticipo, con facoltà per l'Utente di recedere ai sensi del §6.4.
 
@@ -149,15 +142,15 @@ L'app è destinata a un uso personale, non commerciale (salvo quanto previsto pe
 
 L'Utente si impegna a **non**:
 
-- utilizzare l'app o i suoi contenuti per fini illeciti, fraudolenti o lesivi di diritti di terzi;
-- tentare di decompilare, reverse engineering, disassemblare l'app o i modelli di intelligenza artificiale in essa contenuti, fatti salvi i casi espressamente consentiti dalla normativa sul diritto d'autore;
-- copiare, estrarre, duplicare o redistribuire i dati, le foto, le registrazioni audio o i testi provenienti dalle fonti scientifiche integrate nell'app (GBIF, iNaturalist, Wikipedia, Xeno-canto, IUCN, eBird) in violazione delle rispettive licenze;
-- pubblicare nella community contenuti illegali, diffamatori, offensivi, volgari, razzisti, sessisti, che violino i diritti altrui, o che non siano pertinenti al tema dell'ornitologia e del birdwatching;
-- pubblicare osservazioni false, volutamente errate, manipolate o create con l'intento di inquinare i dati scientifici della community;
-- utilizzare bot o sistemi automatizzati per interagire con l'app o con i servizi di Firebase o di terze parti integrati;
-- rivendere, distribuire o sub-licenziare l'app o parti di essa;
-- utilizzare l'app per localizzare, perseguitare o sorvegliare altre persone;
-- utilizzare l'app per attività di poaching, cattura illegale di uccelli o altre attività vietate dalla normativa ambientale e faunistica italiana, europea e internazionale (in particolare la Direttiva 2009/147/CE e la Legge 157/1992).
+* utilizzare l'app o i suoi contenuti per fini illeciti, fraudolenti o lesivi di diritti di terzi;
+* tentare di decompilare, reverse engineering, disassemblare l'app o i modelli di intelligenza artificiale in essa contenuti, fatti salvi i casi espressamente consentiti dalla normativa sul diritto d'autore;
+* copiare, estrarre, duplicare o redistribuire i dati, le foto, le registrazioni audio o i testi provenienti dalle fonti scientifiche integrate nell'app (GBIF, iNaturalist, Wikipedia, Xeno-canto, IUCN, eBird) in violazione delle rispettive licenze;
+* pubblicare nella community (nei metadati dell'osservazione o nei commenti) contenuti illegali, diffamatori, offensivi, volgari, razzisti, sessisti, che violino i diritti altrui, o che non siano pertinenti al tema dell'ornitologia e del birdwatching;
+* pubblicare osservazioni false, volutamente errate, manipolate o create con l'intento di inquinare i dati scientifici della community;
+* utilizzare bot o sistemi automatizzati per interagire con l'app o con i servizi di Firebase o di terze parti integrati;
+* rivendere, distribuire o sub-licenziare l'app o parti di essa;
+* utilizzare l'app per localizzare, perseguitare o sorvegliare altre persone;
+* utilizzare l'app per attività di poaching, cattura illegale di uccelli o altre attività vietate dalla normativa ambientale e faunistica italiana, europea e internazionale (in particolare la Direttiva 2009/147/CE e la Legge 157/1992).
 
 ### 7.3 Conseguenze dell'uso vietato
 
@@ -167,29 +160,39 @@ La violazione delle disposizioni del presente §7 comporta il diritto del Fornit
 
 ## 8. Contenuti generati dall'Utente
 
-### 8.1 Titolarità dei Contenuti Utente
+### 8.1 Ambito dei Contenuti Utente
 
-L'Utente mantiene **ogni diritto di proprietà intellettuale** sui Contenuti Utente (osservazioni, fotografie, registrazioni audio, commenti) che carica o pubblica attraverso l'app. Birdsoniq non rivendica titolarità su tali contenuti.
+Ai fini dei presenti Termini, costituiscono "Contenuti Utente" esclusivamente i **metadati testuali e numerici** che l'Utente sceglie di pubblicare tramite la funzione community:
 
-### 8.2 Licenza concessa al Fornitore
+* nome scientifico e comune della specie identificata;
+* data e ora dell'osservazione;
+* coordinate GPS dell'avvistamento;
+* livello di confidenza del riconoscimento;
+* sorgente dell'identificazione (foto, audio, o combinata);
+* eventuali commenti testuali associati a un'osservazione.
 
-Pubblicando Contenuti Utente nella community o attivando la condivisione con la ricerca scientifica, l'Utente concede al Fornitore una **licenza non esclusiva, gratuita, valida a livello mondiale, trasferibile e sub-licenziabile** di:
+**Le fotografie e le registrazioni audio eventualmente utilizzate dall'Utente per l'identificazione non costituiscono Contenuti Utente ai fini dei presenti Termini**, in quanto tali file restano sempre sul dispositivo dell'Utente e non vengono mai trasmessi al Fornitore o pubblicati nella community. Coerentemente, nessuna disposizione dei presenti Termini può essere intesa come licenza, cessione o trasferimento di diritti su fotografie o registrazioni audio dell'Utente.
 
-- memorizzare, riprodurre, pubblicare e mostrare i Contenuti Utente all'interno dell'app (feed community);
-- rendere i Contenuti Utente disponibili ad altri Utenti dell'app che visualizzano il feed community;
-- effettuare backup e operazioni tecniche necessarie al funzionamento del servizio (archiviazione su Firebase Storage e Firestore);
-- se l'Utente ha attivato la funzione "Condividi con la ricerca scientifica", trasmettere i Contenuti Utente in forma aggregata o pseudonimizzata a enti di ricerca ornitologica accreditati.
+L'Utente mantiene **ogni diritto di proprietà intellettuale** sui Contenuti Utente pubblicati. Birdsoniq non rivendica titolarità su tali contenuti.
 
-Tale licenza ha durata coincidente con la pubblicazione del contenuto nell'app. La revoca del consenso alla condivisione community o la cancellazione del contenuto da parte dell'Utente fanno cessare la licenza per i contenuti futuri, ma non impedisce al Fornitore di conservare copie di backup per il tempo strettamente necessario e per finalità di conformità agli obblighi di legge.
+### 8.2 Licenza concessa al Fornitore sui Contenuti Utente
+
+Pubblicando Contenuti Utente (come definiti al §8.1) nella community, l'Utente concede al Fornitore una **licenza non esclusiva, gratuita, valida a livello mondiale, trasferibile e sub-licenziabile** di:
+
+* memorizzare, riprodurre, pubblicare e mostrare i Contenuti Utente all'interno dell'app (feed community);
+* rendere i Contenuti Utente disponibili ad altri Utenti dell'app che visualizzano il feed community;
+* effettuare backup e operazioni tecniche necessarie al funzionamento del servizio (archiviazione su Firebase Firestore);
+* utilizzare i Contenuti Utente in forma aggregata o pseudonimizzata per finalità statistiche, di ricerca scientifica o di divulgazione, ove consentito dalla normativa applicabile.
+
+Tale licenza ha durata coincidente con la pubblicazione del contenuto nell'app. La revoca del consenso alla condivisione community o la cancellazione del contenuto da parte dell'Utente fanno cessare la licenza per i contenuti futuri, ma non impediscono al Fornitore di conservare copie di backup per il tempo strettamente necessario e per finalità di conformità agli obblighi di legge.
 
 ### 8.3 Responsabilità dell'Utente sui Contenuti
 
 L'Utente è **unico responsabile** dei Contenuti Utente che pubblica e dichiara di:
 
-- essere titolare di tutti i diritti necessari sui contenuti (in particolare: essere l'autore delle fotografie e delle registrazioni audio caricate, o averne diritto per altre vie);
-- aver ottenuto eventuali consensi richiesti da terzi ritratti o registrati (persone, proprietà private identificabili);
-- non violare con i contenuti alcun diritto di proprietà intellettuale, diritto all'immagine, diritto alla riservatezza, o altro diritto di terzi;
-- garantire la veridicità e l'accuratezza dei dati di osservazione pubblicati (specie identificata, data, luogo).
+* garantire la veridicità e l'accuratezza dei dati di osservazione pubblicati (specie identificata, data, luogo);
+* non pubblicare metadati o commenti che violino diritti di terzi, diritti di proprietà intellettuale, diritto alla riservatezza, o altre disposizioni di legge;
+* aver ottenuto eventuali consensi richiesti da terzi per la pubblicazione delle coordinate GPS di luoghi non pubblici (proprietà private, abitazioni identificabili).
 
 L'Utente manleva il Fornitore da qualsiasi pretesa, richiesta di risarcimento o azione legale di terzi che derivi dalla violazione delle dichiarazioni di cui al presente paragrafo.
 
@@ -207,17 +210,17 @@ La modalità Host è una funzionalità aggiuntiva pensata per Utenti che gestisc
 
 L'attivazione della modalità Host comporta:
 
-- l'inserimento del nome della struttura, utilizzato localmente per personalizzare l'interfaccia e per includere il nome nei report PDF generati;
-- la possibilità di generare codici QR per le specie osservate nella struttura (stampabili, utili per cartelli didattici);
-- la generazione locale di report PDF mensili con le specie osservate, le sessioni di birdwatching e le statistiche aggregate;
-- una funzione di "sessione di gruppo" con codice numerico condivisibile, attualmente in fase sperimentale e senza funzionalità di sincronizzazione tra dispositivi diversi.
+* l'inserimento del nome della struttura, utilizzato localmente per personalizzare l'interfaccia e per includere il nome nei report PDF generati;
+* la possibilità di generare codici QR per le specie osservate nella struttura (stampabili, utili per cartelli didattici);
+* la generazione locale di report PDF mensili con le specie osservate, le sessioni di birdwatching e le statistiche aggregate;
+* una funzione di "sessione di gruppo" con codice numerico condivisibile, attualmente in fase sperimentale e senza funzionalità di sincronizzazione tra dispositivi diversi.
 
 **Responsabilità del gestore della struttura.** L'Utente che attiva la modalità Host e permette a ospiti o partecipanti di utilizzare l'app installata sul dispositivo della struttura (tablet condiviso, ecc.) è **pienamente responsabile**:
 
-- di informare adeguatamente gli ospiti/partecipanti della presenza dell'app e delle sue funzionalità;
-- di ottenere eventuali consensi richiesti dalla normativa sulla privacy per l'uso delle funzionalità dell'app da parte di terzi (in particolare se gli ospiti sono minori — per i quali comunque l'utilizzo dell'app resta limitato a Utenti di età pari o superiore a 16 anni, ai sensi del §4.1);
-- di vigilare sui contenuti che vengono pubblicati nella community tramite il dispositivo della struttura;
-- di adempiere agli obblighi pubblicitari, fiscali e amministrativi della propria attività, nessuno dei quali è oggetto dei presenti Termini o del servizio Birdsoniq.
+* di informare adeguatamente gli ospiti/partecipanti della presenza dell'app e delle sue funzionalità;
+* di ottenere eventuali consensi richiesti dalla normativa sulla privacy per l'uso delle funzionalità dell'app da parte di terzi (in particolare se gli ospiti sono minori — per i quali comunque l'utilizzo dell'app resta limitato a Utenti di età pari o superiore a 16 anni, ai sensi del §4.1);
+* di vigilare sui contenuti che vengono pubblicati nella community tramite il dispositivo della struttura;
+* di adempiere agli obblighi pubblicitari, fiscali e amministrativi della propria attività, nessuno dei quali è oggetto dei presenti Termini o del servizio Birdsoniq.
 
 Il Fornitore non effettua alcun controllo sulle strutture che utilizzano la modalità Host, non ha rapporti contrattuali particolari con esse e non garantisce alcuna idoneità dell'app a specifici usi commerciali della struttura. La modalità Host è fornita "così com'è" senza garanzie ulteriori rispetto a quelle previste per l'app nel suo complesso.
 
@@ -243,20 +246,20 @@ Birdsoniq utilizza modelli di intelligenza artificiale per suggerire l'identific
 
 I risultati di identificazione sono **suggerimenti probabilistici** basati su modelli statistici di machine learning. Ogni risultato è accompagnato da un indice di confidenza espresso in percentuale. **I modelli di identificazione possono sbagliare**, anche significativamente, specialmente in caso di:
 
-- registrazioni audio di bassa qualità o con rumore di fondo;
-- fotografie scattate in condizioni di luce difficili, con soggetto lontano, sfocato o parzialmente nascosto;
-- specie simili tra loro (sottospecie, specie gemelle);
-- specie rare, scarsamente rappresentate nei dataset di addestramento dei modelli;
-- specie fuori areale geografico abituale.
+* registrazioni audio di bassa qualità o con rumore di fondo;
+* fotografie scattate in condizioni di luce difficili, con soggetto lontano, sfocato o parzialmente nascosto;
+* specie simili tra loro (sottospecie, specie gemelle);
+* specie rare, scarsamente rappresentate nei dataset di addestramento dei modelli;
+* specie fuori areale geografico abituale.
 
 ### 11.2 Nessuna garanzia scientifica o professionale
 
 I risultati di identificazione di Birdsoniq **non costituiscono identificazione scientifica certificata** né possono sostituire il parere di un esperto ornitologo professionista, di un ente di ricerca accreditato o di un'autorità competente. L'Utente non deve utilizzare i risultati dell'app come unico fondamento di decisioni critiche, inclusi, a titolo esemplificativo ma non esaustivo:
 
-- decisioni di conservazione di specie protette;
-- perizie naturalistiche o valutazioni di impatto ambientale;
-- pratiche di caccia, cattura o attività regolamentate dalla normativa faunistica;
-- segnalazioni ufficiali a enti di ricerca o pubbliche amministrazioni come uniche fonti probatorie.
+* decisioni di conservazione di specie protette;
+* perizie naturalistiche o valutazioni di impatto ambientale;
+* pratiche di caccia, cattura o attività regolamentate dalla normativa faunistica;
+* segnalazioni ufficiali a enti di ricerca o pubbliche amministrazioni come uniche fonti probatorie.
 
 Per utilizzi che abbiano rilevanza scientifica, ambientale o legale, l'Utente è tenuto a far convalidare l'identificazione da un esperto competente.
 
@@ -278,8 +281,8 @@ Il download e l'installazione dell'app concedono all'Utente una **licenza d'uso 
 
 I modelli di machine learning utilizzati dall'app per l'identificazione sono:
 
-- **BirdNET v2.4**, sviluppato dal Cornell Lab of Ornithology (Cornell University) in collaborazione con la Chemnitz University of Technology, utilizzato per l'identificazione audio;
-- **EfficientNet Birds** (noto anche come AIY Birds V1), sviluppato da Google, utilizzato per l'identificazione fotografica.
+* **BirdNET v2.4**, sviluppato dal Cornell Lab of Ornithology (Cornell University) in collaborazione con la Chemnitz University of Technology, utilizzato per l'identificazione audio;
+* **EfficientNet Birds** (noto anche come AIY Birds V1), sviluppato da Google, utilizzato per l'identificazione fotografica.
 
 Tali modelli sono utilizzati sotto le rispettive licenze di distribuzione pubblica (Creative Commons e licenze open-source equivalenti) e restano di proprietà dei rispettivi titolari. Birdsoniq non rivendica alcun diritto di proprietà su tali modelli.
 
@@ -303,11 +306,11 @@ Birdsoniq offre integrazioni opzionali con alcuni servizi terzi (in particolare:
 
 L'Utente prende atto che:
 
-- le chiavi API sono gratuite e ottenibili direttamente dal sito del servizio terzo (`https://ebird.org/api/keygen` per eBird; `https://apiv3.iucnredlist.org/api/v3/token` o endpoint equivalente per IUCN);
-- la registrazione presso il servizio terzo è disciplinata dai termini di servizio e dalla privacy policy del servizio terzo, su cui il Fornitore non ha alcun controllo;
-- l'utilizzo della funzionalità integrata comporta la trasmissione di dati al servizio terzo (nel caso di eBird: coordinate GPS dell'Utente, chiave API e nome scientifico delle specie);
-- il Fornitore non è responsabile per eventuali malfunzionamenti, limitazioni o interruzioni del servizio terzo;
-- il rispetto dei termini di servizio del servizio terzo (in particolare rispetto ai limiti di utilizzo delle API) è responsabilità esclusiva dell'Utente, che ha attivato l'integrazione con la propria chiave.
+* le chiavi API sono gratuite e ottenibili direttamente dal sito del servizio terzo (`https://ebird.org/api/keygen` per eBird; `https://apiv3.iucnredlist.org/api/v3/token` o endpoint equivalente per IUCN);
+* la registrazione presso il servizio terzo è disciplinata dai termini di servizio e dalla privacy policy del servizio terzo, su cui il Fornitore non ha alcun controllo;
+* l'utilizzo della funzionalità integrata comporta la trasmissione di dati al servizio terzo (nel caso di eBird: coordinate GPS dell'Utente, chiave API e nome scientifico delle specie);
+* il Fornitore non è responsabile per eventuali malfunzionamenti, limitazioni o interruzioni del servizio terzo;
+* il rispetto dei termini di servizio del servizio terzo (in particolare rispetto ai limiti di utilizzo delle API) è responsabilità esclusiva dell'Utente, che ha attivato l'integrazione con la propria chiave.
 
 ---
 
@@ -339,10 +342,10 @@ Il Fornitore non risponde di mancate prestazioni dovute a eventi di forza maggio
 
 L'Utente si impegna a manlevare e tenere indenne il Fornitore da ogni pretesa, richiesta, azione legale, costo (incluse le spese legali ragionevoli) che terzi dovessero avanzare in conseguenza di:
 
-- violazione dei presenti Termini da parte dell'Utente;
-- violazione da parte dell'Utente di diritti di terzi (in particolare diritti di proprietà intellettuale, diritto all'immagine, riservatezza) tramite i Contenuti Utente pubblicati;
-- uso dell'app in violazione della normativa applicabile;
-- dichiarazioni false o inaccurate rese dall'Utente nell'ambito dell'utilizzo dell'app o dei suoi Contenuti Utente.
+* violazione dei presenti Termini da parte dell'Utente;
+* violazione da parte dell'Utente di diritti di terzi (in particolare diritti di proprietà intellettuale, diritto all'immagine, riservatezza) tramite i Contenuti Utente pubblicati;
+* uso dell'app in violazione della normativa applicabile;
+* dichiarazioni false o inaccurate rese dall'Utente nell'ambito dell'utilizzo dell'app o dei suoi Contenuti Utente.
 
 ---
 
@@ -356,6 +359,8 @@ Le modifiche ai Termini entrano in vigore al momento della pubblicazione della n
 
 Lo **storico completo** delle versioni dei Termini di Servizio è pubblicamente consultabile sul repository git del documento all'indirizzo indicato in cima al presente documento.
 
+**Principali modifiche nella versione 1.1 (19 aprile 2026):** aggiornamento della definizione di "Contenuti Utente" (§2 e §8.1) e del relativo regime di licenza (§8.2) per riflettere il passaggio a un'architettura community "metadata-only": fotografie e registrazioni audio dell'Utente non vengono più trasmesse al Fornitore né incluse nei Contenuti Utente, restando sempre sul dispositivo. Sezioni aggiornate: §2, §3, §6.1, §7.2, §8.1, §8.2, §8.3.
+
 ---
 
 ## 18. Sospensione e cessazione del servizio
@@ -368,9 +373,9 @@ L'Utente può cessare l'utilizzo dell'app in qualsiasi momento disinstallandola 
 
 Il Fornitore si riserva il diritto di sospendere o terminare l'accesso dell'Utente all'app nei seguenti casi:
 
-- violazione grave o reiterata dei presenti Termini da parte dell'Utente;
-- utilizzo fraudolento, abusivo o illegale dell'app;
-- obbligo di legge o ordine di autorità competente.
+* violazione grave o reiterata dei presenti Termini da parte dell'Utente;
+* utilizzo fraudolento, abusivo o illegale dell'app;
+* obbligo di legge o ordine di autorità competente.
 
 In caso di terminazione per motivi riconducibili all'Utente, non è dovuto alcun rimborso, salvo quanto previsto dalla normativa imperativa in materia di consumatori.
 
@@ -378,8 +383,8 @@ In caso di terminazione per motivi riconducibili all'Utente, non è dovuto alcun
 
 Il Fornitore si riserva la facoltà di cessare l'erogazione del servizio Birdsoniq, nel suo complesso o di parti di esso, con preavviso di almeno **60 giorni** agli Utenti tramite avviso in-app e pubblicazione sul sito `birdsoniq.app`. In tal caso:
 
-- agli Utenti con Abbonamento Gold attivo sarà riconosciuto un rimborso proporzionale del periodo residuo non goduto, salvo diversa pattuizione;
-- i dati degli Utenti saranno gestiti secondo quanto previsto dalla Privacy Policy, con garanzia della possibilità di esportare in anticipo le proprie osservazioni tramite la funzione di esportazione eBird o altra equivalente.
+* agli Utenti con Abbonamento Gold attivo sarà riconosciuto un rimborso proporzionale del periodo residuo non goduto, salvo diversa pattuizione;
+* i dati degli Utenti saranno gestiti secondo quanto previsto dalla Privacy Policy, con garanzia della possibilità di esportare in anticipo le proprie osservazioni tramite la funzione di esportazione eBird o altra equivalente.
 
 ---
 
@@ -432,7 +437,7 @@ Il presente documento è redatto in lingua italiana, che prevale in caso di disc
 **Fornitore:** Giovanni Secci
 **Indirizzo:** Via Baccarini, 08100 Nuoro (NU), Italia
 **Email (supporto, reclami, copyright, questioni legali):** giovannisecci72@gmail.com
-**Partita IVA:** [IT__________ — in corso di attivazione]
+**Partita IVA:** [IT\_\_**\_\_**\_\_ — in corso di attivazione]
 
 Per qualsiasi questione relativa ai presenti Termini di Servizio, all'utilizzo dell'app o all'abbonamento, l'Utente può scrivere all'indirizzo email sopra indicato. Il Fornitore si impegna a rispondere entro un termine ragionevole (di norma entro 10 giorni lavorativi).
 

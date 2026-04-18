@@ -1,14 +1,7 @@
----
-layout: default
-title: Privacy Policy — Birdsoniq (EN)
-description: Birdsoniq privacy policy pursuant to EU Regulation 2016/679 (GDPR).
-lang: en
----
-
 # Privacy Policy — Birdsoniq
 
-**Last updated:** 17 April 2026
-**Document version:** 1.0
+**Last updated:** 19 April 2026
+**Document version:** 1.1
 
 > The complete history of modifications to this Privacy Policy is publicly available on the document's git repository: `https://github.com/giovannisecci/birdsoniq-legal`. Each previous version remains verifiable and downloadable.
 
@@ -22,11 +15,11 @@ This Privacy Policy describes how **Birdsoniq** (hereinafter "the app") collects
 
 **Data Controller**
 
-- **Name:** Giovanni Secci
-- **Address:** Via Baccarini, 08100 Nuoro (NU), Italy
-- **VAT number:** [IT__________ — pending activation at the date of first publication]
-- **Email for privacy matters:** giovannisecci72@gmail.com
-- **Email for general support:** giovannisecci72@gmail.com
+* **Name:** Giovanni Secci
+* **Address:** Via Baccarini, 08100 Nuoro (NU), Italy
+* **VAT number:** [IT\_\_**\_\_**\_\_ — pending activation at the date of first publication]
+* **Email for privacy matters:** giovannisecci72@gmail.com
+* **Email for general support:** giovannisecci72@gmail.com
 
 > **Note on email addresses:** the email addresses indicated above are provisional and will be replaced with addresses on the `birdsoniq.app` domain as soon as the domain becomes active. Updates will be published in a new version of this document.
 
@@ -42,10 +35,11 @@ Birdsoniq is designed according to the principle of **data minimization**: it co
 
 Key features of the adopted approach:
 
-- **No user account.** The app does not require registration, login, email or password. No direct identifying data of the user is collected.
-- **On-device identification.** The artificial intelligence models for bird identification via photo and audio run entirely on the user's device. Audio recordings and photographs are never transmitted to external servers for identification purposes.
-- **Opt-in community sharing.** Publishing observations in the community feed requires the user's explicit consent, requested via an informative dialog at the first sharing attempt.
-- **No advertising, no tracker.** The app does not integrate advertising SDKs, behavioral analytics services, profiling tools or third-party trackers.
+* **No user account.** The app does not require registration, login, email or password. No direct identifying data of the user is collected.
+* **Fully on-device identification.** The artificial intelligence models for bird identification via photo and audio run entirely on the user's device. Audio recordings and photographs are never transmitted to external servers, neither for identification purposes nor for community sharing: they remain exclusively on the user's device.
+* **"Metadata-only" community.** The community feature allows users to share only the metadata of an observation (species name, date, GPS coordinates, confidence level). Audio, photographs and any other multimedia files are never uploaded to the cloud. See §3.8.
+* **Opt-in community sharing.** Publishing metadata in the community feed requires the user's explicit consent, requested via an informative dialog at the first sharing attempt.
+* **No advertising, no tracker.** The app does not integrate advertising SDKs, behavioral analytics services, profiling tools or third-party trackers.
 
 ---
 
@@ -55,89 +49,95 @@ Below is the detailed list of the categories of data that Birdsoniq processes, w
 
 ### 3.1 Anonymous installation identifier
 
-- **What is collected:** a randomly generated unique identifier (UUID v4, called "installId") created at the first launch of the app and stored on the user's device in local preferences.
-- **Purpose:** to allow the user to exercise GDPR rights (in particular deletion) without the need for an account; to identify content published in the community in a pseudonymous manner.
-- **Legal basis:** legitimate interest of the Data Controller in ensuring the functionality of the app and the possibility of exercising the rights of data subjects (art. 6(1)(f) GDPR).
-- **Recipients:** Google Firestore (Google Ireland Ltd. / Google LLC infrastructure) when the user publishes community content or activates the Gold subscription.
-- **Retention:** as long as the app remains installed on the device. The user may request the deletion of all content associated with their installId at any time (see §9).
+* **What is collected:** a randomly generated unique identifier (UUID v4, called "installId") created at the first launch of the app and stored on the user's device in local preferences.
+* **Purpose:** to allow the user to exercise GDPR rights (in particular deletion) without the need for an account; to identify content published in the community in a pseudonymous manner.
+* **Legal basis:** legitimate interest of the Data Controller in ensuring the functionality of the app and the possibility of exercising the rights of data subjects (art. 6(1)(f) GDPR).
+* **Recipients:** Google Firestore (Google Ireland Ltd. / Google LLC infrastructure) when the user publishes community content or activates the Gold subscription.
+* **Retention:** as long as the app remains installed on the device. The user may request the deletion of all content associated with their installId at any time (see §9).
 
 ### 3.2 Audio recordings from the microphone
 
-- **What is collected:** WAV recordings (48 kHz, mono) of a few seconds duration, made at the time of identifying a bird through its song.
-- **Purpose:** species identification via the BirdNET 2.4 model executed entirely on the device.
-- **Legal basis:** user consent (art. 6(1)(a) GDPR), expressed through granting microphone permission to the operating system.
-- **Recipients:** **none**. Recordings remain exclusively on the user's device. They are not transmitted to external servers for identification purposes.
-- **Retention:** recordings are saved in a temporary folder on the device. The user may delete them at any time. Only if the user explicitly decides to share the observation with the community, the audio is uploaded to Firebase Storage (see §3.8).
+* **What is collected:** WAV recordings (48 kHz, mono) of a few seconds duration, made at the time of identifying a bird through its song.
+* **Purpose:** species identification via the BirdNET 2.4 model executed entirely on the device.
+* **Legal basis:** user consent (art. 6(1)(a) GDPR), expressed through granting microphone permission to the operating system.
+* **Recipients:** **none**. Recordings always remain exclusively on the user's device. They are not transmitted to external servers, neither for identification purposes nor for community sharing. Audio never leaves the user's device.
+* **Retention:** recordings are saved in a temporary folder on the device. The user may delete them at any time through the operating system's file manager or by reinstalling the app.
 
 ### 3.3 Photographs from camera or gallery
 
-- **What is collected:** photographs taken with the device's camera or selected from the user's gallery for identification purposes.
-- **Purpose:** species identification via the EfficientNet Birds model executed entirely on the device.
-- **Legal basis:** user consent (art. 6(1)(a) GDPR), expressed through granting camera and/or media access permissions.
-- **Recipients:** **none**. Photographs remain exclusively on the device. They are not transmitted to external servers for identification purposes.
-- **Retention:** photographs remain in the folder designated by the user (gallery or device storage). Only if the user explicitly decides to share the observation with the community, the photo is uploaded to Firebase Storage (see §3.8).
+* **What is collected:** photographs taken with the device's camera or selected from the user's gallery for identification purposes.
+* **Purpose:** species identification via the EfficientNet Birds (AIY V1) model executed entirely on the device.
+* **Legal basis:** user consent (art. 6(1)(a) GDPR), expressed through granting camera and/or media access permissions.
+* **Recipients:** **none**. Photographs always remain exclusively on the user's device. They are not transmitted to external servers, neither for identification purposes nor for community sharing. Photos never leave the user's device.
+* **Retention:** photographs remain in the folder designated by the user (gallery or device storage), at their discretion.
 
 ### 3.4 Geographic location data (GPS)
 
-- **What is collected:** geographic coordinates (latitude and longitude) of the user's device at the time of an observation or when using functionalities that require geographical context (maps, region filters, local species suggestions).
-- **Purpose:**
-    - filtering of species displayed based on the user's geographic area;
-    - association of observations with their location (if the user chooses to save them);
-    - notifications of rare species nearby (functionality available only with the Gold subscription);
-    - search for eBird hotspots and recent observations (only if the user has configured their eBird API key, see §5.3).
-- **Legal basis:** user consent (art. 6(1)(a) GDPR), expressed through granting location permission to the operating system.
-- **Recipients:**
-    - no recipient if the user uses only local features;
-    - Firebase Firestore if the user publishes an observation in the community;
-    - GBIF if the user consults distribution maps (query with anonymous coordinates);
-    - eBird / Cornell Lab of Ornithology, only if the user has activated the eBird integration by configuring their personal API key.
-- **Retention:** on the device, at the user's discretion (stored together with the observation record in the local history). On Firebase Firestore, for published observations: until the user requests deletion.
+* **What is collected:** geographic coordinates (latitude and longitude) of the user's device at the time of an observation or when using functionalities that require geographical context (maps, region filters, local species suggestions).
+* **Purpose:**
+  + filtering of species displayed based on the user's geographic area;
+  + association of observations with their location (if the user chooses to save them);
+  + notifications of rare species nearby (functionality available only with the Gold subscription);
+  + search for eBird hotspots and recent observations (only if the user has configured their eBird API key, see §5.3).
+* **Legal basis:** user consent (art. 6(1)(a) GDPR), expressed through granting location permission to the operating system.
+* **Recipients:**
+  + no recipient if the user uses only local features;
+  + Firebase Firestore if the user publishes an observation in the community (coordinates published as metadata);
+  + GBIF if the user consults distribution maps (query with anonymous coordinates);
+  + eBird / Cornell Lab of Ornithology, only if the user has activated the eBird integration by configuring their personal API key.
+* **Retention:** on the device, at the user's discretion (stored together with the observation record in the local history). On Firebase Firestore, for published observations: until the user requests deletion.
 
 ### 3.5 Observation data
 
-- **What is collected:** details of the observations made by the user: identified species, recognition confidence, timestamp, any geographic location, any associated photo or audio.
-- **Purpose:** construction of the user's personal history (available to Gold subscribers), calculation of personal statistics (species seen, daily streaks, badges), optional community sharing.
-- **Legal basis:** performance of a contract (art. 6(1)(b) GDPR) for the personal history of Gold users; explicit consent (art. 6(1)(a) GDPR) for community sharing.
-- **Recipients:** remain on the device by default; uploaded to Firebase Firestore only if the user subscribes to Gold (synced history) or shares with the community.
-- **Retention:** on the device as long as the app remains installed; on Firebase Firestore until the user requests deletion or cancels the Gold subscription.
+* **What is collected:** textual details of the observations made by the user: identified species (scientific and common name), recognition confidence, timestamp, any geographic location. **Media (audio and photographs) associated with the identification always remain on the device and are not part of the observation data transmitted to the server.**
+* **Purpose:** construction of the user's personal history (available to Gold subscribers), calculation of personal statistics (species seen, daily streaks, badges), optional community sharing.
+* **Legal basis:** performance of a contract (art. 6(1)(b) GDPR) for the personal history of Gold users; explicit consent (art. 6(1)(a) GDPR) for community sharing.
+* **Recipients:** remain on the device by default; uploaded to Firebase Firestore (only the textual/numeric fields, without media) if the user subscribes to Gold (synced history) or shares with the community.
+* **Retention:** on the device as long as the app remains installed; on Firebase Firestore until the user requests deletion or cancels the Gold subscription.
 
 ### 3.6 App usage data
 
-- **What is collected:** non-identifying personal statistics of the user: number of species observed, streak of consecutive days of activity, badges earned, app usage preferences.
-- **Purpose:** gamification and user motivation (badge, level, achievement system).
-- **Legal basis:** performance of a contract (art. 6(1)(b) GDPR).
-- **Recipients:** stored locally on the device; for Gold users, synchronized on Firebase Firestore to allow access from multiple devices and server-side validation of badges.
-- **Retention:** on the device as long as the app remains installed. On Firestore as long as the Gold subscription is active.
+* **What is collected:** non-identifying personal statistics of the user: number of species observed, streak of consecutive days of activity, badges earned, app usage preferences.
+* **Purpose:** gamification and user motivation (badge, level, achievement system).
+* **Legal basis:** performance of a contract (art. 6(1)(b) GDPR).
+* **Recipients:** stored locally on the device; for Gold users, synchronized on Firebase Firestore to allow access from multiple devices and server-side validation of badges.
+* **Retention:** on the device as long as the app remains installed. On Firestore as long as the Gold subscription is active.
 
 ### 3.7 Subscription-related data (Gold)
 
-- **What is collected:** subscription status (active / inactive / trial period), expiry date, Google Play Billing transaction identifiers.
-- **Purpose:** provision of features reserved for Gold subscribers, server-side verification of subscription validity to prevent abuse.
-- **Legal basis:** performance of a contract (art. 6(1)(b) GDPR).
-- **Recipients:** Google Play Billing (merchant of record of the subscription) and Firebase Cloud Functions (validity verification). Birdsoniq **does not access** the user's payment card data: such data is managed exclusively by Google under its own terms.
-- **Retention:** as long as the subscription is active; after cancellation, data relating to the last billing cycle are retained for 10 years for tax and accounting purposes (legal obligation, art. 2220 of the Italian Civil Code).
+* **What is collected:** subscription status (active / inactive / trial period), expiry date, Google Play Billing transaction identifiers.
+* **Purpose:** provision of features reserved for Gold subscribers, server-side verification of subscription validity to prevent abuse.
+* **Legal basis:** performance of a contract (art. 6(1)(b) GDPR).
+* **Recipients:** Google Play Billing (merchant of record of the subscription) and Firebase Cloud Functions (validity verification). Birdsoniq **does not access** the user's payment card data: such data is managed exclusively by Google under its own terms.
+* **Retention:** as long as the subscription is active; after cancellation, data relating to the last billing cycle are retained for 10 years for tax and accounting purposes (legal obligation, art. 2220 of the Italian Civil Code).
 
-### 3.8 Content shared with the community
+### 3.8 Content shared with the community (metadata-only architecture)
 
-- **What is collected:** when the user explicitly chooses to publish an observation in the community (opt-in operation), the following data are uploaded to Firebase Firestore and Firebase Storage:
-    - the user's installId (pseudonymous identifier)
-    - the identified species (scientific and common name)
-    - the date and time of the observation
-    - the GPS coordinates of the sighting
-    - any photograph taken
-    - any audio recording made
-- **Purpose:** construction of a community feed of scientific observations useful for citizen science and biodiversity monitoring.
-- **Legal basis:** explicit user consent (art. 6(1)(a) GDPR), expressed through an informative dialog that requires confirmation at the first sharing attempt and to which the user may choose to give persistent consent or consent revocable on a single occasion.
-- **Recipients:** other users of the app who view the community feed, to whom observations are shown with the pseudonymized installId (non-identifying). Firebase Firestore and Firebase Storage as storage infrastructure.
-- **Retention:** until the user requests deletion. Consent may be revoked at any time from the app's Privacy Settings; revocation disables future sharing but does not automatically delete previously published observations (for these the user must submit a deletion request — see §9).
+> **Fundamental principle — no media in the cloud.** The Birdsoniq community feature is designed as a "metadata-only" service: when the user chooses to share an observation, **photographs and audio recordings are never transmitted to the server**. Only the textual and numeric metadata of the observation are uploaded to Firebase Firestore.
+
+* **What is collected:** when the user explicitly chooses to publish an observation in the community (opt-in operation), the following data — and **only** these — are uploaded to Firebase Firestore:
+  + the user's installId (pseudonymous identifier)
+  + the identified species (scientific and common name)
+  + the date and time of the observation
+  + the GPS coordinates of the sighting
+  + the recognition confidence level
+  + the source of the identification (photo, audio, or combined)
+* **What is NOT collected or transmitted:**
+  + any photograph taken for identification purposes;
+  + any audio recording used for identification purposes;
+  + any other multimedia file present on the device.
+* **Purpose:** construction of a community feed of observations useful for citizen science and biodiversity monitoring, without compromising the user's audio/photographic privacy.
+* **Legal basis:** explicit user consent (art. 6(1)(a) GDPR), expressed through an informative dialog that requires confirmation at the first sharing attempt and to which the user may choose to give persistent consent or consent revocable on a single occasion.
+* **Recipients:** other users of the app who view the community feed, to whom observation metadata are shown with the pseudonymized installId (non-identifying). Firebase Firestore as storage infrastructure. Firebase Storage **is not used** for the community.
+* **Retention:** until the user requests deletion. Consent may be revoked at any time from the app's Privacy Settings; revocation disables future sharing but does not automatically delete the metadata of previously published observations (for these the user must submit a deletion request — see §9).
 
 ### 3.9 External service API keys (eBird, IUCN)
 
-- **What is collected:** personal API keys that the user may optionally enter in the app's settings to enable integrations with eBird and the IUCN Red List.
-- **Purpose:** to allow the user to use their free API key to access additional features (eBird hotspots, detailed IUCN conservation status).
-- **Legal basis:** user consent (art. 6(1)(a) GDPR).
-- **Recipients:** keys are stored exclusively on the user's device, never transmitted to Birdsoniq servers. When used, they are sent directly to the corresponding service (Cornell Lab of Ornithology for eBird; IUCN for the Red List).
-- **Retention:** on the device until the user manually removes them from the settings.
+* **What is collected:** personal API keys that the user may optionally enter in the app's settings to enable integrations with eBird and the IUCN Red List.
+* **Purpose:** to allow the user to use their free API key to access additional features (eBird hotspots, detailed IUCN conservation status).
+* **Legal basis:** user consent (art. 6(1)(a) GDPR).
+* **Recipients:** keys are stored exclusively on the user's device, never transmitted to Birdsoniq servers. When used, they are sent directly to the corresponding service (Cornell Lab of Ornithology for eBird; IUCN for the Red List).
+* **Retention:** on the device until the user manually removes them from the settings.
 
 ---
 
@@ -145,10 +145,10 @@ Below is the detailed list of the categories of data that Birdsoniq processes, w
 
 As indicated for each category in the previous paragraph, the legal bases on which data processing is based are those provided for in art. 6(1) of the GDPR, specifically:
 
-- **Consent (art. 6(1)(a)):** for the processing of sensitive data such as audio, images, location and for community sharing.
-- **Performance of a contract (art. 6(1)(b)):** for the essential functions of the app and for the provision of the Gold subscription.
-- **Legitimate interest (art. 6(1)(f)):** for the generation of the pseudonymous installId (necessary to ensure the functionality of the app while maintaining privacy-by-design).
-- **Legal obligation (art. 6(1)(c)):** for the retention of accounting data related to transactions.
+* **Consent (art. 6(1)(a)):** for the processing of sensitive data such as audio and images (both remain on-device), location, and for community metadata sharing.
+* **Performance of a contract (art. 6(1)(b)):** for the essential functions of the app and for the provision of the Gold subscription.
+* **Legitimate interest (art. 6(1)(f)):** for the generation of the pseudonymous installId (necessary to ensure the functionality of the app while maintaining privacy-by-design).
+* **Legal obligation (art. 6(1)(c)):** for the retention of accounting data related to transactions.
 
 ---
 
@@ -160,12 +160,11 @@ Birdsoniq relies on some third-party services to provide its functionalities. Be
 
 **Google Firebase** (Google Ireland Ltd. and Google LLC): backend infrastructure of the app.
 
-- *Cloud Firestore:* storage of community observations, Gold history, synchronized statistics, validation records.
-- *Firebase Storage:* storage of photos and audio shared with the community.
-- *Cloud Functions:* server-side verification of Gold subscription validity.
-- *Firebase Core:* service initialization.
+* *Cloud Firestore:* storage of community observation metadata, Gold history (textual metadata), synchronized statistics, validation records.
+* *Cloud Functions:* server-side verification of Gold subscription validity.
+* *Firebase Core:* service initialization.
 
-Birdsoniq **does not use** Firebase Authentication, Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging, Firebase Remote Config or any other Google analysis or profiling services.
+Birdsoniq **does not use** Firebase Storage (consequently no audio or photograph is ever uploaded to Firebase servers), Firebase Authentication, Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging, Firebase Remote Config or any other Google analysis or profiling services.
 
 Reference privacy policy: `https://policies.google.com/privacy`.
 
@@ -183,7 +182,7 @@ Reference privacy policy: `https://policies.google.com/privacy`.
 
 Privacy policy: `https://www.gbif.org/terms/privacy-policy`.
 
-**iNaturalist** (California Academy of Sciences / National Geographic Society, USA): source of species photographs and taxonomic information, accessible via public API. Birdsoniq queries iNaturalist by transmitting the scientific name of the species of interest, without user personal data.
+**iNaturalist** (California Academy of Sciences / National Geographic Society, USA): source of species photographs and taxonomic information, accessible via public API. Birdsoniq queries iNaturalist by transmitting the scientific name of the species of interest, without user personal data and without sending user photographs. The app does not use iNaturalist's computer vision services: photo identification is entirely on-device.
 
 Privacy policy: `https://www.inaturalist.org/pages/privacy`.
 
@@ -205,9 +204,9 @@ Terms of use: `https://xeno-canto.org/about/terms`.
 
 When the user activates the integration, the following information is transmitted to eBird servers:
 
-- device GPS coordinates (for searching hotspots and notable observations nearby);
-- the user's personal API key;
-- the scientific name of the species of interest.
+* device GPS coordinates (for searching hotspots and notable observations nearby);
+* the user's personal API key;
+* the scientific name of the species of interest.
 
 In the absence of a configured API key, **no data is transmitted** to eBird. The configured API key can be removed at any time from the settings, deactivating the integration.
 
@@ -224,7 +223,7 @@ Birdsoniq offers a functionality to export observations in the "eBird Record For
 Some of the recipients listed in §5 are located outside the European Economic Area. Below is the table of extra-EU transfers and the safeguards adopted for each:
 
 | Recipient | Country | Safeguard pursuant to art. 46 GDPR |
-|---|---|---|
+| --- | --- | --- |
 | Google Ireland Ltd. | Ireland (EU) | — |
 | Google LLC | United States | Standard Contractual Clauses (SCC) + Data Privacy Framework |
 | iNaturalist | United States | Equivalent Standard Contractual Clauses (public policy) |
@@ -241,13 +240,13 @@ Regarding transfers to the United States, the safeguards are based on EU Commiss
 ## 7. Retention periods
 
 | Data category | Retention period |
-|---|---|
+| --- | --- |
 | installId | As long as the app remains installed |
-| Audio recordings | Temporary, until the user deletes them |
-| Photographs | At the user's discretion (device memory) |
+| Audio recordings | On the device (temporary folder), until the user deletes them. **Never transmitted to external servers.** |
+| Photographs | On the device, at the user's discretion. **Never transmitted to external servers.** |
 | GPS coordinates (not published) | On the device until deleted by the user |
-| Observation history | As long as the Gold subscription is active |
-| Published community observations | Until the user requests deletion |
+| Published community observation metadata | Until the user requests deletion |
+| Observation history (metadata) | As long as the Gold subscription is active |
 | Active subscription data | For the duration of the subscription |
 | Subscription accounting data | 10 years from cancellation (legal obligation) |
 | External API keys | Until the user removes them |
@@ -258,13 +257,13 @@ Regarding transfers to the United States, the safeguards are based on EU Commiss
 
 The user has the right, at any time, to exercise the rights recognized by articles 15 to 22 of the GDPR, including:
 
-- **Right of access (art. 15):** to obtain confirmation of the processing of their data and, if so, access to such data and information on the processing.
-- **Right of rectification (art. 16):** to obtain the rectification of inaccurate or incomplete data.
-- **Right to erasure (art. 17):** to obtain the deletion of their personal data.
-- **Right to restriction of processing (art. 18):** to obtain the restriction of the processing of their data under certain circumstances.
-- **Right to data portability (art. 20):** to receive their data in a structured, commonly used and machine-readable format.
-- **Right to object (art. 21):** to object to the processing of their data.
-- **Right to withdraw consent (art. 7.3):** to revoke at any time the consent previously given, without prejudice to the lawfulness of the processing carried out before the withdrawal.
+* **Right of access (art. 15):** to obtain confirmation of the processing of their data and, if so, access to such data and information on the processing.
+* **Right of rectification (art. 16):** to obtain the rectification of inaccurate or incomplete data.
+* **Right to erasure (art. 17):** to obtain the deletion of their personal data.
+* **Right to restriction of processing (art. 18):** to obtain the restriction of the processing of their data under certain circumstances.
+* **Right to data portability (art. 20):** to receive their data in a structured, commonly used and machine-readable format.
+* **Right to object (art. 21):** to object to the processing of their data.
+* **Right to withdraw consent (art. 7.3):** to revoke at any time the consent previously given, without prejudice to the lawfulness of the processing carried out before the withdrawal.
 
 ---
 
@@ -299,11 +298,11 @@ Website: `https://www.garanteprivacy.it`
 
 The data processed by Birdsoniq are protected through:
 
-- **Encryption in transit:** all communications between the app and the servers (Firebase, third-party services) take place via HTTPS / TLS 1.2 or higher protocol.
-- **Pseudonymization:** the user identifier is a random UUID, not a direct identifying datum.
-- **Minimization:** only the data strictly necessary for the declared functionalities are collected.
-- **Firebase security rules:** access to data on Firestore is regulated by security rules that limit reading and writing to only legitimate cases.
-- **No sale to third parties:** user data is never sold, transferred or assigned to third parties for commercial or advertising purposes.
+* **Encryption in transit:** all communications between the app and the servers (Firebase, third-party services) take place via HTTPS / TLS 1.2 or higher protocol.
+* **Pseudonymization:** the user identifier is a random UUID, not a direct identifying datum.
+* **Minimization:** only the data strictly necessary for the declared functionalities are collected. In particular, audio and photographs never leave the device: the main privacy risk vector has been eliminated at the root.
+* **Firebase security rules:** access to data on Firestore is regulated by security rules that limit reading and writing to only legitimate cases and constrain the format of the data that can be uploaded.
+* **No sale to third parties:** user data is never sold, transferred or assigned to third parties for commercial or advertising purposes.
 
 Despite the measures adopted, no IT system is 100% secure. In the event of a personal data breach that may entail a high risk for the rights and freedoms of the user, the Data Controller will notify the event to the user and the Italian Data Protection Authority within the terms provided by articles 33 and 34 of the GDPR (within 72 hours of becoming aware of the breach).
 
@@ -337,6 +336,8 @@ Changes take effect upon publication of the new version of the document. The dat
 
 **Version history.** All previous versions of the Privacy Policy are publicly available on the document's git repository: `https://github.com/giovannisecci/birdsoniq-legal`. Each version is identified by its git commit with cryptographic hash and verifiable date.
 
+**Main changes in version 1.1 (19 April 2026):** update to reflect the transition to a "metadata-only" community architecture. User audio and photographs are no longer transmitted to Firebase Storage: they always remain exclusively on the device. Updated sections: §2, §3.2, §3.3, §3.5, §3.8, §5.1, §7, §11.
+
 ---
 
 ## 15. Sources of data shown in the app and related attributions
@@ -366,7 +367,7 @@ Birdsoniq integrates data, text, images and audio recordings provided by third-p
 **Data Controller:** Giovanni Secci
 **Address:** Via Baccarini, 08100 Nuoro (NU), Italy
 **Email (privacy, copyright, support):** giovannisecci72@gmail.com
-**VAT number:** [IT__________ — pending activation]
+**VAT number:** [IT\_\_**\_\_**\_\_ — pending activation]
 
 For any matters relating to this Privacy Policy or the processing of their data, the user may write to the email address indicated above. The Data Controller undertakes to respond within the time limits provided by applicable legislation.
 
