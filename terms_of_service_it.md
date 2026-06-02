@@ -1,7 +1,7 @@
 # Termini di Servizio — Birdsoniq
 
-**Ultimo aggiornamento:** 19 aprile 2026
-**Versione documento:** 1.1
+**Ultimo aggiornamento:** 2 giugno 2026
+**Versione documento:** 1.2
 
 > Lo storico completo delle modifiche a questi Termini di Servizio è pubblicamente consultabile sul repository git del documento: `https://github.com/giovannisecci/birdsoniq-legal`. Ogni versione precedente resta verificabile e scaricabile.
 
@@ -9,7 +9,7 @@
 
 ## 1. Introduzione e accettazione
 
-I presenti Termini di Servizio (di seguito "Termini") disciplinano l'utilizzo dell'applicazione mobile **Birdsoniq** (di seguito "l'app"), sviluppata e gestita da Giovanni Secci (di seguito "il Fornitore"). Scaricando, installando o utilizzando l'app, l'utente (di seguito "Utente") dichiara di aver letto, compreso e accettato integralmente i presenti Termini e la [Privacy Policy](https://giovannisecci.github.io/birdsoniq-legal/privacy_policy_it.html) di Birdsoniq, che ne forma parte integrante.
+I presenti Termini di Servizio (di seguito "Termini") disciplinano l'utilizzo dell'applicazione mobile **Birdsoniq** (di seguito "l'app"), sviluppata e gestita da Giovanni Secci (di seguito "il Fornitore"). Scaricando, installando o utilizzando l'app, l'utente (di seguito "Utente") dichiara di aver letto, compreso e accettato integralmente i presenti Termini e la [Privacy Policy](https://legal.birdsoniq.app/privacy_policy_it.html) di Birdsoniq, che ne forma parte integrante.
 
 Qualora l'Utente non accetti anche uno solo dei presenti Termini, è invitato a non utilizzare l'app e a disinstallarla dal proprio dispositivo.
 
@@ -72,7 +72,7 @@ Birdsoniq non richiede registrazione, login, email o password. Ogni installazion
 
 L'Utente prende atto che, in assenza di un sistema di autenticazione, ogni dispositivo costituisce un'identità distinta agli occhi del sistema, e che l'installazione dell'app su un nuovo dispositivo genera un nuovo installId non collegato a quello precedente. Le funzionalità che dipendono dall'identità (cronologia personale, abbonamento Gold, contenuti community pubblicati) sono legate al singolo dispositivo.
 
-Per gestire i diritti dell'Utente in materia di protezione dei dati personali (accesso, cancellazione, ecc.), si rinvia alla [Privacy Policy](https://giovannisecci.github.io/birdsoniq-legal/privacy_policy_it.html), §9.
+Per gestire i diritti dell'Utente in materia di protezione dei dati personali (accesso, cancellazione, ecc.), si rinvia alla [Privacy Policy](https://legal.birdsoniq.app/privacy_policy_it.html), §9.
 
 ---
 
@@ -359,6 +359,8 @@ Le modifiche ai Termini entrano in vigore al momento della pubblicazione della n
 
 Lo **storico completo** delle versioni dei Termini di Servizio è pubblicamente consultabile sul repository git del documento all'indirizzo indicato in cima al presente documento.
 
+**Principali modifiche nella versione 1.2 (2 giugno 2026):** aggiornati l'indirizzo email di contatto al dominio definitivo (privacy@birdsoniq.app) e i link alla Privacy Policy al dominio `legal.birdsoniq.app`, a seguito dell'attivazione del dominio `birdsoniq.app`.
+
 **Principali modifiche nella versione 1.1 (19 aprile 2026):** aggiornamento della definizione di "Contenuti Utente" (§2 e §8.1) e del relativo regime di licenza (§8.2) per riflettere il passaggio a un'architettura community "metadata-only": fotografie e registrazioni audio dell'Utente non vengono più trasmesse al Fornitore né incluse nei Contenuti Utente, restando sempre sul dispositivo. Sezioni aggiornate: §2, §3, §6.1, §7.2, §8.1, §8.2, §8.3.
 
 ---
@@ -436,7 +438,7 @@ Il presente documento è redatto in lingua italiana, che prevale in caso di disc
 
 **Fornitore:** Giovanni Secci
 **Indirizzo:** Via Baccarini, 08100 Nuoro (NU), Italia
-**Email (supporto, reclami, copyright, questioni legali):** giovannisecci72@gmail.com
+**Email (supporto, reclami, copyright, questioni legali):** privacy@birdsoniq.app
 **Partita IVA:** [IT\_\_**\_\_**\_\_ — in corso di attivazione]
 
 Per qualsiasi questione relativa ai presenti Termini di Servizio, all'utilizzo dell'app o all'abbonamento, l'Utente può scrivere all'indirizzo email sopra indicato. Il Fornitore si impegna a rispondere entro un termine ragionevole (di norma entro 10 giorni lavorativi).

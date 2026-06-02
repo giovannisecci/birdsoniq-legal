@@ -1,7 +1,7 @@
 # Privacy Policy — Birdsoniq
 
-**Ultimo aggiornamento:** 19 aprile 2026
-**Versione documento:** 1.1
+**Ultimo aggiornamento:** 2 giugno 2026
+**Versione documento:** 1.2
 
 > Lo storico completo delle modifiche a questa Privacy Policy è pubblicamente consultabile sul repository git del documento: `https://github.com/giovannisecci/birdsoniq-legal`. Ogni versione precedente resta verificabile e scaricabile.
 
@@ -16,10 +16,9 @@ La presente Privacy Policy descrive le modalità con cui **Birdsoniq** (di segui
 * **Nome:** Giovanni Secci
 * **Indirizzo:** Via Baccarini, 08100 Nuoro (NU), Italia
 * **Partita IVA:** [IT\_\_**\_\_**\_\_ — in corso di attivazione alla data di prima pubblicazione]
-* **Email per questioni privacy:** giovannisecci72@gmail.com
-* **Email per supporto generale:** giovannisecci72@gmail.com
+* **Email per questioni privacy:** privacy@birdsoniq.app
+* **Email per supporto generale:** privacy@birdsoniq.app
 
-> **Nota sugli indirizzi email:** gli indirizzi sopra indicati sono provvisori e saranno sostituiti con indirizzi sul dominio `birdsoniq.app` non appena il dominio sarà attivo. Gli aggiornamenti verranno pubblicati in una nuova versione di questo documento.
 
 **Accettazione**
 
@@ -269,7 +268,7 @@ L'utente ha il diritto, in qualunque momento, di esercitare i diritti riconosciu
 
 Per esercitare uno qualsiasi dei diritti elencati al §8, l'utente può inviare una richiesta all'indirizzo email:
 
-**giovannisecci72@gmail.com**
+**privacy@birdsoniq.app**
 
 indicando nell'oggetto della mail "Richiesta GDPR — [tipo di diritto]" (ad esempio: "Richiesta GDPR — cancellazione").
 
@@ -334,6 +333,8 @@ Le modifiche entrano in vigore al momento della pubblicazione della nuova versio
 
 **Storico delle versioni.** Tutte le versioni precedenti della Privacy Policy sono pubblicamente consultabili sul repository git del documento: `https://github.com/giovannisecci/birdsoniq-legal`. Ciascuna versione è identificata dal proprio commit git con hash crittografico e data verificabile.
 
+**Principali modifiche nella versione 1.2 (2 giugno 2026):** aggiornati gli indirizzi email di contatto del Titolare all'indirizzo definitivo sul dominio (privacy@birdsoniq.app) e i link ai documenti al dominio `legal.birdsoniq.app`, a seguito dell'attivazione del dominio `birdsoniq.app`. Rimossa la nota sugli indirizzi email provvisori (§1).
+
 **Principali modifiche nella versione 1.1 (19 aprile 2026):** aggiornamento per riflettere il passaggio a un'architettura community "metadata-only". Audio e fotografie dell'utente non vengono più trasmessi a Firebase Storage: restano sempre ed esclusivamente sul dispositivo. Sezioni aggiornate: §2, §3.2, §3.3, §3.5, §3.8, §5.1, §7, §11.
 
 ---
@@ -364,7 +365,7 @@ Birdsoniq integra dati, testi, immagini e registrazioni audio forniti da progett
 
 **Titolare del trattamento:** Giovanni Secci
 **Indirizzo:** Via Baccarini, 08100 Nuoro (NU), Italia
-**Email (privacy, copyright, supporto):** giovannisecci72@gmail.com
+**Email (privacy, copyright, supporto):** privacy@birdsoniq.app
 **Partita IVA:** [IT\_\_**\_\_**\_\_ — in corso di attivazione]
 
 Per qualsiasi questione relativa alla presente Privacy Policy o al trattamento dei propri dati, l'utente può scrivere all'indirizzo email sopra indicato. Il Titolare si impegna a rispondere nei tempi previsti dalla normativa applicabile.

@@ -1,7 +1,7 @@
 # Terms of Service — Birdsoniq
 
-**Last updated:** 19 April 2026
-**Document version:** 1.1
+**Last updated:** 2 June 2026
+**Document version:** 1.2
 
 > The complete history of modifications to these Terms of Service is publicly available on the document's git repository: `https://github.com/giovannisecci/birdsoniq-legal`. Each previous version remains verifiable and downloadable.
 
@@ -11,7 +11,7 @@
 
 ## 1. Introduction and acceptance
 
-These Terms of Service (hereinafter "Terms") govern the use of the mobile application **Birdsoniq** (hereinafter "the app"), developed and operated by Giovanni Secci (hereinafter "the Provider"). By downloading, installing or using the app, the user (hereinafter "User") declares to have read, understood and fully accepted these Terms and the Birdsoniq [Privacy Policy](https://giovannisecci.github.io/birdsoniq-legal/privacy_policy_en.html), which forms an integral part thereof.
+These Terms of Service (hereinafter "Terms") govern the use of the mobile application **Birdsoniq** (hereinafter "the app"), developed and operated by Giovanni Secci (hereinafter "the Provider"). By downloading, installing or using the app, the user (hereinafter "User") declares to have read, understood and fully accepted these Terms and the Birdsoniq [Privacy Policy](https://legal.birdsoniq.app/privacy_policy_en.html), which forms an integral part thereof.
 
 If the User does not accept even one of these Terms, they are invited not to use the app and to uninstall it from their device.
 
@@ -74,7 +74,7 @@ Birdsoniq does not require registration, login, email or password. Each installa
 
 The User acknowledges that, in the absence of an authentication system, each device constitutes a distinct identity from the system's point of view, and that installing the app on a new device generates a new installId unrelated to the previous one. Features that depend on identity (personal history, Gold subscription, published community content) are tied to the individual device.
 
-To manage User rights regarding personal data protection (access, deletion, etc.), please refer to the [Privacy Policy](https://giovannisecci.github.io/birdsoniq-legal/privacy_policy_en.html), §9.
+To manage User rights regarding personal data protection (access, deletion, etc.), please refer to the [Privacy Policy](https://legal.birdsoniq.app/privacy_policy_en.html), §9.
 
 ---
 
@@ -361,6 +361,8 @@ Changes to the Terms take effect upon publication of the new version of the docu
 
 The **complete history** of the versions of the Terms of Service is publicly available on the document's git repository at the address indicated at the top of this document.
 
+**Main changes in version 1.2 (2 June 2026):** updated the contact email address to the definitive domain address (privacy@birdsoniq.app) and the Privacy Policy links to the `legal.birdsoniq.app` domain, following the activation of the `birdsoniq.app` domain.
+
 **Main changes in version 1.1 (19 April 2026):** update of the definition of "User Content" (§2 and §8.1) and of the relevant license regime (§8.2) to reflect the transition to a "metadata-only" community architecture: User photographs and audio recordings are no longer transmitted to the Provider or included in User Content, and always remain on the device. Updated sections: §2, §3, §6.1, §7.2, §8.1, §8.2, §8.3.
 
 ---
@@ -438,7 +440,7 @@ This document is drafted in Italian (`terms_of_service_it.md`), which prevails i
 
 **Provider:** Giovanni Secci
 **Address:** Via Baccarini, 08100 Nuoro (NU), Italy
-**Email (support, complaints, copyright, legal matters):** giovannisecci72@gmail.com
+**Email (support, complaints, copyright, legal matters):** privacy@birdsoniq.app
 **VAT number:** [IT\_\_**\_\_**\_\_ — pending activation]
 
 For any matters relating to these Terms of Service, the use of the app or the subscription, the User may write to the email address indicated above. The Provider undertakes to respond within a reasonable time (usually within 10 working days).
