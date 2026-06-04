@@ -119,6 +119,7 @@ Di seguito l'elenco dettagliato delle categorie di dati che Birdsoniq tratta, co
   + le coordinate GPS dell'avvistamento
   + il livello di confidenza del riconoscimento
   + la sorgente dell'identificazione (foto, audio, o combinata)
+  + gli eventuali commenti testuali pubblicati dall'utente sulle osservazioni del feed (testo del commento, identificativo pseudonimo dell'autore, data e ora)
 * **Cosa NON viene raccolto né trasmesso:**
   + la fotografia eventualmente scattata per l'identificazione;
   + la registrazione audio eventualmente utilizzata per l'identificazione;
@@ -127,6 +128,8 @@ Di seguito l'elenco dettagliato delle categorie di dati che Birdsoniq tratta, co
 * **Base giuridica:** consenso esplicito dell'utente (art. 6(1)(a) GDPR), espresso tramite un dialog informativo che richiede conferma al primo tentativo di condivisione e al quale l'utente può scegliere di dare consenso persistente o revocabile per singola occasione.
 * **Destinatari:** altri utenti dell'app che visualizzano il feed community, cui vengono mostrati i metadati dell'osservazione con l'installId pseudonimizzato (non identificativo). Firebase Firestore come infrastruttura di memorizzazione. Firebase Storage **non viene utilizzato** per la community.
 * **Conservazione:** fino a richiesta di cancellazione da parte dell'utente. Il consenso può essere revocato in qualsiasi momento dalle Impostazioni Privacy dell'app; la revoca disabilita future condivisioni ma non cancella automaticamente i metadati delle osservazioni già pubblicate (per queste l'utente deve inoltrare richiesta di cancellazione — v. §9).
+
+**Segnalazioni e moderazione.** Se l'utente segnala un contenuto della community (avvistamento o commento), viene registrata su Firebase Firestore una segnalazione contenente: tipo e identificativo del contenuto segnalato, motivo della segnalazione (spam, contenuto inappropriato, molestie, altro), identificativo pseudonimo dell'autore del contenuto (se presente), un identificativo tecnico anonimo del segnalante (generato tramite autenticazione anonima Firebase, privo di dati identificativi) e data e ora. Finalità: moderazione dei contenuti e sicurezza della community. Base giuridica: legittimo interesse del Titolare alla sicurezza del servizio (art. 6(1)(f) GDPR). Le segnalazioni sono conservate per il tempo necessario alla gestione della moderazione.
 
 ### 3.9 Chiavi API di servizi esterni (eBird, IUCN)
 
@@ -168,7 +171,7 @@ Birdsoniq si avvale di alcuni servizi di terze parti per erogare le proprie funz
 * *Cloud Firestore:* archiviazione dei metadati delle osservazioni community, cronologia Gold (metadati testuali), statistiche sincronizzate, record di validazione.
 * *Cloud Functions:* verifica server-side della validità dell'abbonamento Gold.
 * *Firebase Core:* inizializzazione dei servizi.
-* *Firebase Authentication:* gestione degli account utente facoltativi (email/password e accesso con Google), v. §3.10.
+* *Firebase Authentication:* gestione degli account utente facoltativi (email/password e accesso con Google), v. §3.10; autenticazione tecnica anonima (senza dati identificativi) per l'invio delle segnalazioni di contenuti, v. §3.8.
 
 Birdsoniq **non utilizza** Firebase Storage (conseguentemente nessun audio né fotografia viene mai caricato su server Firebase), Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging, Firebase Remote Config né altri servizi di analisi o profilazione di Google.
 
@@ -251,7 +254,8 @@ Per quanto riguarda i trasferimenti negli Stati Uniti, le garanzie si basano sul
 | Registrazioni audio | Sul dispositivo (cartella temporanea), finché l'utente non le elimina. **Non vengono mai trasmesse a server esterni.** |
 | Fotografie | Sul dispositivo, a discrezione dell'utente. **Non vengono mai trasmesse a server esterni.** |
 | Coordinate GPS (non pubblicate) | Sul dispositivo finché non cancellate dall'utente |
-| Metadati osservazioni community pubblicati | Finché l'utente non ne richiede la cancellazione |
+| Metadati osservazioni e commenti community pubblicati | Finché l'utente non ne richiede la cancellazione |
+| Segnalazioni di contenuti | Per il tempo necessario alla gestione della moderazione |
 | Cronologia osservazioni (metadati) | Finché l'abbonamento Gold è attivo |
 | Dati abbonamento attivi | Per la durata dell'abbonamento |
 | Dati contabili abbonamento | 10 anni dalla disdetta (obbligo legale) |
@@ -346,7 +350,7 @@ Le modifiche entrano in vigore al momento della pubblicazione della nuova versio
 
 **Storico delle versioni.** Tutte le versioni precedenti della Privacy Policy sono pubblicamente consultabili sul repository git del documento: `https://github.com/giovannisecci/birdsoniq-legal`. Ciascuna versione è identificata dal proprio commit git con hash crittografico e data verificabile.
 
-**Principali modifiche nella versione 1.3 (4 giugno 2026):** recepita l'introduzione degli account utente facoltativi (Firebase Authentication: email/password e accesso Google) e della funzione di eliminazione account in-app. Aggiunta la sezione §3.10 (dati dell'account utente); aggiornati §2 (da "nessun account utente" ad "account facoltativo"), §3.5, §5.1, §7 e §9; pubblicata la pagina dedicata `https://legal.birdsoniq.app/account_deletion.html`.
+**Principali modifiche nella versione 1.3 (4 giugno 2026):** recepita l'introduzione degli account utente facoltativi (Firebase Authentication: email/password e accesso Google) e della funzione di eliminazione account in-app. Aggiunta la sezione §3.10 (dati dell'account utente); aggiornati §2 (da "nessun account utente" ad "account facoltativo"), §3.5, §3.8 (commenti e segnalazioni di contenuti), §5.1, §7 e §9; pubblicata la pagina dedicata `https://legal.birdsoniq.app/account_deletion.html`.
 
 **Principali modifiche nella versione 1.2 (2 giugno 2026):** aggiornati gli indirizzi email di contatto del Titolare all'indirizzo definitivo sul dominio (privacy@birdsoniq.app) e i link ai documenti al dominio `legal.birdsoniq.app`, a seguito dell'attivazione del dominio `birdsoniq.app`. Rimossa la nota sugli indirizzi email provvisori (§1).
 

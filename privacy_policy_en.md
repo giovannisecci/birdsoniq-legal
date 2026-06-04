@@ -121,6 +121,7 @@ Below is the detailed list of the categories of data that Birdsoniq processes, w
   + the GPS coordinates of the sighting
   + the recognition confidence level
   + the source of the identification (photo, audio, or combined)
+  + any textual comments published by the user on feed observations (comment text, pseudonymous identifier of the author, date and time)
 * **What is NOT collected or transmitted:**
   + any photograph taken for identification purposes;
   + any audio recording used for identification purposes;
@@ -129,6 +130,8 @@ Below is the detailed list of the categories of data that Birdsoniq processes, w
 * **Legal basis:** explicit user consent (art. 6(1)(a) GDPR), expressed through an informative dialog that requires confirmation at the first sharing attempt and to which the user may choose to give persistent consent or consent revocable on a single occasion.
 * **Recipients:** other users of the app who view the community feed, to whom observation metadata are shown with the pseudonymized installId (non-identifying). Firebase Firestore as storage infrastructure. Firebase Storage **is not used** for the community.
 * **Retention:** until the user requests deletion. Consent may be revoked at any time from the app's Privacy Settings; revocation disables future sharing but does not automatically delete the metadata of previously published observations (for these the user must submit a deletion request — see §9).
+
+**Reports and moderation.** If the user reports a community content item (observation or comment), a report is recorded on Firebase Firestore containing: type and identifier of the reported content, reason for the report (spam, inappropriate content, harassment, other), pseudonymous identifier of the content author (if present), an anonymous technical identifier of the reporter (generated via Firebase anonymous authentication, containing no identifying data) and date and time. Purpose: content moderation and community safety. Legal basis: legitimate interest of the Data Controller in the security of the service (art. 6(1)(f) GDPR). Reports are retained for the time necessary to handle moderation.
 
 ### 3.9 External service API keys (eBird, IUCN)
 
@@ -170,7 +173,7 @@ Birdsoniq relies on some third-party services to provide its functionalities. Be
 * *Cloud Firestore:* storage of community observation metadata, Gold history (textual metadata), synchronized statistics, validation records.
 * *Cloud Functions:* server-side verification of Gold subscription validity.
 * *Firebase Core:* service initialization.
-* *Firebase Authentication:* management of optional user accounts (email/password and Google sign-in), see §3.10.
+* *Firebase Authentication:* management of optional user accounts (email/password and Google sign-in), see §3.10; anonymous technical authentication (with no identifying data) for submitting content reports, see §3.8.
 
 Birdsoniq **does not use** Firebase Storage (consequently no audio or photograph is ever uploaded to Firebase servers), Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging, Firebase Remote Config or any other Google analysis or profiling services.
 
@@ -253,7 +256,8 @@ Regarding transfers to the United States, the safeguards are based on EU Commiss
 | Audio recordings | On the device (temporary folder), until the user deletes them. **Never transmitted to external servers.** |
 | Photographs | On the device, at the user's discretion. **Never transmitted to external servers.** |
 | GPS coordinates (not published) | On the device until deleted by the user |
-| Published community observation metadata | Until the user requests deletion |
+| Published community observation and comment metadata | Until the user requests deletion |
+| Content reports | For the time necessary to handle moderation |
 | Observation history (metadata) | As long as the Gold subscription is active |
 | Active subscription data | For the duration of the subscription |
 | Subscription accounting data | 10 years from cancellation (legal obligation) |
@@ -348,7 +352,7 @@ Changes take effect upon publication of the new version of the document. The dat
 
 **Version history.** All previous versions of the Privacy Policy are publicly available on the document's git repository: `https://github.com/giovannisecci/birdsoniq-legal`. Each version is identified by its git commit with cryptographic hash and verifiable date.
 
-**Main changes in version 1.3 (4 June 2026):** incorporated the introduction of optional user accounts (Firebase Authentication: email/password and Google sign-in) and the in-app account deletion feature. Added section §3.10 (user account data); updated §2 (from "no user account" to "optional account"), §3.5, §5.1, §7 and §9; published the dedicated page `https://legal.birdsoniq.app/account_deletion.html`.
+**Main changes in version 1.3 (4 June 2026):** incorporated the introduction of optional user accounts (Firebase Authentication: email/password and Google sign-in) and the in-app account deletion feature. Added section §3.10 (user account data); updated §2 (from "no user account" to "optional account"), §3.5, §3.8 (comments and content reports), §5.1, §7 and §9; published the dedicated page `https://legal.birdsoniq.app/account_deletion.html`.
 
 **Main changes in version 1.2 (2 June 2026):** updated the Data Controller's contact email addresses to the definitive address on the domain (privacy@birdsoniq.app) and the document links to the `legal.birdsoniq.app` domain, following the activation of the `birdsoniq.app` domain. Removed the note on provisional email addresses (§1).
 
