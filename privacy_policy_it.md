@@ -1,7 +1,7 @@
 # Privacy Policy — Birdsoniq
 
-**Ultimo aggiornamento:** 2 giugno 2026
-**Versione documento:** 1.2
+**Ultimo aggiornamento:** 4 giugno 2026
+**Versione documento:** 1.3
 
 > Lo storico completo delle modifiche a questa Privacy Policy è pubblicamente consultabile sul repository git del documento: `https://github.com/giovannisecci/birdsoniq-legal`. Ogni versione precedente resta verificabile e scaricabile.
 
@@ -32,7 +32,7 @@ Birdsoniq è progettata secondo il principio della **minimizzazione dei dati**: 
 
 Caratteristiche chiave dell'approccio adottato:
 
-* **Nessun account utente.** L'app non richiede registrazione, login, email o password. Non viene raccolto alcun dato identificativo diretto dell'utente.
+* **Account facoltativo.** L'app non richiede registrazione: l'identificazione delle specie tramite foto e audio funziona interamente senza account. L'utente può facoltativamente creare un account (email e password, oppure accesso Google) per abilitare funzioni accessorie quali la sincronizzazione cloud della cronologia (Gold) e il profilo struttura. L'account è eliminabile in qualsiasi momento direttamente dall'app (v. §3.10).
 * **Identificazione interamente on-device.** I modelli di intelligenza artificiale per l'identificazione di uccelli tramite foto e audio girano interamente sul dispositivo dell'utente. Le registrazioni audio e le fotografie non vengono mai trasmesse a server esterni, né per l'identificazione né per la condivisione con la community: restano esclusivamente sul dispositivo dell'utente.
 * **Community "metadata-only".** La funzione community consente di condividere i soli metadati di un'osservazione (nome della specie, data, coordinate GPS, livello di confidenza). Audio, fotografie e qualsiasi altro file multimediale non vengono mai caricati sul cloud. Cfr. §3.8.
 * **Condivisione community opt-in.** La pubblicazione dei metadati nel feed community richiede il consenso esplicito dell'utente, richiesto tramite un dialog informativo al primo tentativo di condivisione.
@@ -89,7 +89,7 @@ Di seguito l'elenco dettagliato delle categorie di dati che Birdsoniq tratta, co
 * **Cosa viene raccolto:** dettagli testuali delle osservazioni effettuate dall'utente: specie identificata (nome scientifico e comune), confidenza del riconoscimento, timestamp, eventuale posizione geografica. **I media (audio e fotografie) associati all'identificazione restano sempre sul dispositivo e non fanno parte dei dati di osservazione trasmessi al server.**
 * **Finalità:** costruzione della cronologia personale dell'utente (disponibile agli abbonati Gold), calcolo di statistiche personali (specie viste, streak giornalieri, badge), condivisione opzionale con la community.
 * **Base giuridica:** esecuzione del contratto (art. 6(1)(b) GDPR) per la cronologia personale degli utenti Gold; consenso esplicito (art. 6(1)(a) GDPR) per la condivisione community.
-* **Destinatari:** restano sul dispositivo per default; caricati su Firebase Firestore (solo nei campi testuali/numerici, senza media) se l'utente sottoscrive l'abbonamento Gold (cronologia sincronizzata) o condivide con la community.
+* **Destinatari:** restano sul dispositivo per default; caricati su Firebase Firestore (solo nei campi testuali/numerici, senza media) se l'utente sottoscrive l'abbonamento Gold (cronologia sincronizzata, richiede un account) o condivide con la community.
 * **Conservazione:** sul dispositivo finché l'app resta installata; su Firebase Firestore finché l'utente non richiede cancellazione o disdice l'abbonamento Gold.
 
 ### 3.6 Dati di utilizzo dell'app
@@ -136,6 +136,14 @@ Di seguito l'elenco dettagliato delle categorie di dati che Birdsoniq tratta, co
 * **Destinatari:** le chiavi sono memorizzate esclusivamente sul dispositivo dell'utente, mai trasmesse ai server di Birdsoniq. Quando utilizzate, vengono inviate direttamente al servizio corrispondente (Cornell Lab of Ornithology per eBird; IUCN per la Red List).
 * **Conservazione:** sul dispositivo finché l'utente non le rimuove manualmente dalle impostazioni.
 
+### 3.10 Dati dell'account utente (facoltativo)
+
+* **Cosa viene raccolto:** se l'utente sceglie di creare un account — operazione **facoltativa**, non necessaria per l'identificazione delle specie — vengono trattati: l'indirizzo email; le credenziali di autenticazione (gestite da Firebase Authentication: la password non è mai accessibile al Titolare in chiaro); in caso di accesso con Google, l'identificativo dell'account Google e il nome visualizzato forniti dal provider. L'app non raccoglie né utilizza la fotografia del profilo.
+* **Finalità:** autenticazione dell'utente; sincronizzazione multi-dispositivo della cronologia e delle statistiche (riservata agli abbonati Gold); funzionalità per strutture (profilo Venue, quote e codici ospite); gestione della lista di utenti bloccati nella community; esercizio semplificato dei diritti GDPR.
+* **Base giuridica:** esecuzione del contratto (art. 6(1)(b) GDPR), per le funzionalità richieste dall'utente con la creazione dell'account.
+* **Destinatari:** Google Firebase Authentication e Cloud Firestore (Google Ireland Ltd. / Google LLC) come infrastruttura.
+* **Conservazione:** finché l'account esiste. L'utente può eliminare l'account **in qualsiasi momento, con effetto immediato e irreversibile**, dall'app (Profilo → Elimina account) oppure inviando una richiesta email dall'indirizzo associato all'account. L'eliminazione cancella l'account di accesso, la cronologia sincronizzata e la Life list cloud, il profilo struttura con quote e codici ospite, e la lista degli utenti bloccati. Restano: i metadati pubblicati nella community (associati all'installId e non all'account — rimovibili su richiesta, v. §9) e i record antiabuso relativi all'eventuale periodo di prova gratuito (associati all'installazione e conservati per legittimo interesse del Titolare alla prevenzione degli abusi, art. 6(1)(f) GDPR). Procedura dettagliata: `https://legal.birdsoniq.app/account_deletion.html`.
+
 ---
 
 ## 4. Base giuridica del trattamento
@@ -160,8 +168,9 @@ Birdsoniq si avvale di alcuni servizi di terze parti per erogare le proprie funz
 * *Cloud Firestore:* archiviazione dei metadati delle osservazioni community, cronologia Gold (metadati testuali), statistiche sincronizzate, record di validazione.
 * *Cloud Functions:* verifica server-side della validità dell'abbonamento Gold.
 * *Firebase Core:* inizializzazione dei servizi.
+* *Firebase Authentication:* gestione degli account utente facoltativi (email/password e accesso con Google), v. §3.10.
 
-Birdsoniq **non utilizza** Firebase Storage (conseguentemente nessun audio né fotografia viene mai caricato su server Firebase), Firebase Authentication, Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging, Firebase Remote Config né altri servizi di analisi o profilazione di Google.
+Birdsoniq **non utilizza** Firebase Storage (conseguentemente nessun audio né fotografia viene mai caricato su server Firebase), Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging, Firebase Remote Config né altri servizi di analisi o profilazione di Google.
 
 Privacy policy di riferimento: `https://policies.google.com/privacy`.
 
@@ -247,6 +256,8 @@ Per quanto riguarda i trasferimenti negli Stati Uniti, le garanzie si basano sul
 | Dati abbonamento attivi | Per la durata dell'abbonamento |
 | Dati contabili abbonamento | 10 anni dalla disdetta (obbligo legale) |
 | Chiavi API esterne | Finché l'utente non le rimuove |
+| Dati account (email, identificativi di accesso) | Finché l'account esiste; eliminazione immediata dall'app o su richiesta email (v. §3.10) |
+| Record antiabuso del periodo di prova | Associati all'installazione; conservati anche dopo l'eliminazione dell'account (legittimo interesse) |
 
 ---
 
@@ -272,7 +283,9 @@ Per esercitare uno qualsiasi dei diritti elencati al §8, l'utente può inviare 
 
 indicando nell'oggetto della mail "Richiesta GDPR — [tipo di diritto]" (ad esempio: "Richiesta GDPR — cancellazione").
 
-**Procedura speciale per utenti senza account.** Poiché Birdsoniq non richiede registrazione né login, non dispone di alcun dato identificativo diretto dell'utente: per identificare i dati associati a una specifica installazione è necessario che l'utente fornisca il proprio **installId**. Per visualizzare il proprio installId, l'utente può aprire l'app, accedere al menu *Impostazioni → Informazioni Legali → Il mio identificativo anonimo*. Questo identificativo è l'unico elemento che collega l'utente ai dati pubblicati nella community o alla cronologia Gold sincronizzata.
+**Utenti con account.** L'utente che ha creato un account può eliminarlo direttamente dall'app (Profilo → Elimina account), con effetto immediato e irreversibile, oppure inviare la richiesta dall'indirizzo email associato all'account (necessario per verificare l'identità del richiedente). Procedura dettagliata: `https://legal.birdsoniq.app/account_deletion.html` e §3.10.
+
+**Procedura per utenti senza account.** Per i dati non associati a un account (contenuti community e dati legati all'installazione), Birdsoniq non dispone di alcun dato identificativo diretto dell'utente: per identificare i dati associati a una specifica installazione è necessario che l'utente fornisca il proprio **installId**. Per visualizzare il proprio installId, l'utente può aprire l'app, accedere al menu *Impostazioni → Informazioni Legali → Il mio identificativo anonimo*. Questo identificativo è l'unico elemento che collega l'utente ai dati pubblicati nella community o alla cronologia Gold sincronizzata.
 
 **Tempi di risposta.** Il Titolare risponde alle richieste entro **30 giorni** dalla ricezione della richiesta completa, nel rispetto dell'art. 12(3) GDPR. In casi di particolare complessità, tale termine può essere prorogato di altri 60 giorni, con comunicazione motivata all'utente.
 
@@ -332,6 +345,8 @@ Le modifiche entrano in vigore al momento della pubblicazione della nuova versio
 **Modifiche sostanziali** (ad esempio: nuove categorie di dati raccolti, nuovi destinatari, modifica delle finalità di trattamento) saranno comunicate all'utente tramite un avviso in-app al successivo avvio dell'app, dando all'utente la possibilità di revisionare la nuova versione.
 
 **Storico delle versioni.** Tutte le versioni precedenti della Privacy Policy sono pubblicamente consultabili sul repository git del documento: `https://github.com/giovannisecci/birdsoniq-legal`. Ciascuna versione è identificata dal proprio commit git con hash crittografico e data verificabile.
+
+**Principali modifiche nella versione 1.3 (4 giugno 2026):** recepita l'introduzione degli account utente facoltativi (Firebase Authentication: email/password e accesso Google) e della funzione di eliminazione account in-app. Aggiunta la sezione §3.10 (dati dell'account utente); aggiornati §2 (da "nessun account utente" ad "account facoltativo"), §3.5, §5.1, §7 e §9; pubblicata la pagina dedicata `https://legal.birdsoniq.app/account_deletion.html`.
 
 **Principali modifiche nella versione 1.2 (2 giugno 2026):** aggiornati gli indirizzi email di contatto del Titolare all'indirizzo definitivo sul dominio (privacy@birdsoniq.app) e i link ai documenti al dominio `legal.birdsoniq.app`, a seguito dell'attivazione del dominio `birdsoniq.app`. Rimossa la nota sugli indirizzi email provvisori (§1).
 

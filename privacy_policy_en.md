@@ -1,7 +1,7 @@
 # Privacy Policy — Birdsoniq
 
-**Last updated:** 2 June 2026
-**Document version:** 1.2
+**Last updated:** 4 June 2026
+**Document version:** 1.3
 
 > The complete history of modifications to this Privacy Policy is publicly available on the document's git repository: `https://github.com/giovannisecci/birdsoniq-legal`. Each previous version remains verifiable and downloadable.
 
@@ -34,7 +34,7 @@ Birdsoniq is designed according to the principle of **data minimization**: it co
 
 Key features of the adopted approach:
 
-* **No user account.** The app does not require registration, login, email or password. No direct identifying data of the user is collected.
+* **Optional account.** The app does not require registration: species identification via photo and audio works entirely without an account. The user may optionally create an account (email and password, or Google sign-in) to enable accessory features such as cloud synchronization of the history (Gold) and the venue profile. The account can be deleted at any time directly from the app (see §3.10).
 * **Fully on-device identification.** The artificial intelligence models for bird identification via photo and audio run entirely on the user's device. Audio recordings and photographs are never transmitted to external servers, neither for identification purposes nor for community sharing: they remain exclusively on the user's device.
 * **"Metadata-only" community.** The community feature allows users to share only the metadata of an observation (species name, date, GPS coordinates, confidence level). Audio, photographs and any other multimedia files are never uploaded to the cloud. See §3.8.
 * **Opt-in community sharing.** Publishing metadata in the community feed requires the user's explicit consent, requested via an informative dialog at the first sharing attempt.
@@ -91,7 +91,7 @@ Below is the detailed list of the categories of data that Birdsoniq processes, w
 * **What is collected:** textual details of the observations made by the user: identified species (scientific and common name), recognition confidence, timestamp, any geographic location. **Media (audio and photographs) associated with the identification always remain on the device and are not part of the observation data transmitted to the server.**
 * **Purpose:** construction of the user's personal history (available to Gold subscribers), calculation of personal statistics (species seen, daily streaks, badges), optional community sharing.
 * **Legal basis:** performance of a contract (art. 6(1)(b) GDPR) for the personal history of Gold users; explicit consent (art. 6(1)(a) GDPR) for community sharing.
-* **Recipients:** remain on the device by default; uploaded to Firebase Firestore (only the textual/numeric fields, without media) if the user subscribes to Gold (synced history) or shares with the community.
+* **Recipients:** remain on the device by default; uploaded to Firebase Firestore (only the textual/numeric fields, without media) if the user subscribes to Gold (synced history, requires an account) or shares with the community.
 * **Retention:** on the device as long as the app remains installed; on Firebase Firestore until the user requests deletion or cancels the Gold subscription.
 
 ### 3.6 App usage data
@@ -138,6 +138,14 @@ Below is the detailed list of the categories of data that Birdsoniq processes, w
 * **Recipients:** keys are stored exclusively on the user's device, never transmitted to Birdsoniq servers. When used, they are sent directly to the corresponding service (Cornell Lab of Ornithology for eBird; IUCN for the Red List).
 * **Retention:** on the device until the user manually removes them from the settings.
 
+### 3.10 User account data (optional)
+
+* **What is collected:** if the user chooses to create an account — an **optional** operation, not necessary for species identification — the following are processed: the email address; the authentication credentials (managed by Firebase Authentication: the password is never accessible to the Data Controller in clear text); in case of Google sign-in, the Google account identifier and the display name provided by the provider. The app does not collect or use the profile photo.
+* **Purpose:** user authentication; multi-device synchronization of history and statistics (reserved to Gold subscribers); venue features (venue profile, quotas and guest codes); management of the blocked users list in the community; simplified exercise of GDPR rights.
+* **Legal basis:** performance of a contract (art. 6(1)(b) GDPR), for the features requested by the user upon account creation.
+* **Recipients:** Google Firebase Authentication and Cloud Firestore (Google Ireland Ltd. / Google LLC) as infrastructure.
+* **Retention:** as long as the account exists. The user may delete the account **at any time, with immediate and irreversible effect**, from the app (Profile → Delete account) or by sending an email request from the address associated with the account. Deletion removes the sign-in account, the synced history and cloud Life list, the venue profile with quotas and guest codes, and the blocked users list. What remains: metadata published to the community (tied to the installId, not to the account — removable upon request, see §9) and the anti-abuse records related to any free trial period (tied to the installation and retained on the basis of the Data Controller's legitimate interest in preventing abuse, art. 6(1)(f) GDPR). Detailed procedure: `https://legal.birdsoniq.app/account_deletion.html`.
+
 ---
 
 ## 4. Legal basis for processing
@@ -162,8 +170,9 @@ Birdsoniq relies on some third-party services to provide its functionalities. Be
 * *Cloud Firestore:* storage of community observation metadata, Gold history (textual metadata), synchronized statistics, validation records.
 * *Cloud Functions:* server-side verification of Gold subscription validity.
 * *Firebase Core:* service initialization.
+* *Firebase Authentication:* management of optional user accounts (email/password and Google sign-in), see §3.10.
 
-Birdsoniq **does not use** Firebase Storage (consequently no audio or photograph is ever uploaded to Firebase servers), Firebase Authentication, Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging, Firebase Remote Config or any other Google analysis or profiling services.
+Birdsoniq **does not use** Firebase Storage (consequently no audio or photograph is ever uploaded to Firebase servers), Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging, Firebase Remote Config or any other Google analysis or profiling services.
 
 Reference privacy policy: `https://policies.google.com/privacy`.
 
@@ -249,6 +258,8 @@ Regarding transfers to the United States, the safeguards are based on EU Commiss
 | Active subscription data | For the duration of the subscription |
 | Subscription accounting data | 10 years from cancellation (legal obligation) |
 | External API keys | Until the user removes them |
+| Account data (email, sign-in identifiers) | As long as the account exists; immediate deletion from the app or upon email request (see §3.10) |
+| Free-trial anti-abuse records | Tied to the installation; retained after account deletion (legitimate interest) |
 
 ---
 
@@ -274,7 +285,9 @@ To exercise any of the rights listed in §8, the user may send a request to the 
 
 indicating in the subject of the email "GDPR Request — [type of right]" (for example: "GDPR Request — deletion").
 
-**Special procedure for users without an account.** Since Birdsoniq does not require registration or login, it does not have any direct identifying data of the user: to identify the data associated with a specific installation, the user must provide their **installId**. To view their installId, the user can open the app and access the menu *Settings → Legal Information → My anonymous identifier*. This identifier is the only element that links the user to data published in the community or to the synchronized Gold history.
+**Users with an account.** A user who created an account may delete it directly from the app (Profile → Delete account), with immediate and irreversible effect, or send the request from the email address associated with the account (required to verify the identity of the requester). Detailed procedure: `https://legal.birdsoniq.app/account_deletion.html` and §3.10.
+
+**Procedure for users without an account.** For data not associated with an account (community content and installation-related data), Birdsoniq does not have any direct identifying data of the user: to identify the data associated with a specific installation, the user must provide their **installId**. To view their installId, the user can open the app and access the menu *Settings → Legal Information → My anonymous identifier*. This identifier is the only element that links the user to data published in the community or to the synchronized Gold history.
 
 **Response times.** The Data Controller responds to requests within **30 days** of receipt of the complete request, in compliance with art. 12(3) GDPR. In cases of particular complexity, this term may be extended by another 60 days, with reasoned communication to the user.
 
@@ -334,6 +347,8 @@ Changes take effect upon publication of the new version of the document. The dat
 **Substantial changes** (for example: new categories of data collected, new recipients, modification of processing purposes) will be communicated to the user through an in-app notice upon the next launch of the app, giving the user the opportunity to review the new version.
 
 **Version history.** All previous versions of the Privacy Policy are publicly available on the document's git repository: `https://github.com/giovannisecci/birdsoniq-legal`. Each version is identified by its git commit with cryptographic hash and verifiable date.
+
+**Main changes in version 1.3 (4 June 2026):** incorporated the introduction of optional user accounts (Firebase Authentication: email/password and Google sign-in) and the in-app account deletion feature. Added section §3.10 (user account data); updated §2 (from "no user account" to "optional account"), §3.5, §5.1, §7 and §9; published the dedicated page `https://legal.birdsoniq.app/account_deletion.html`.
 
 **Main changes in version 1.2 (2 June 2026):** updated the Data Controller's contact email addresses to the definitive address on the domain (privacy@birdsoniq.app) and the document links to the `legal.birdsoniq.app` domain, following the activation of the `birdsoniq.app` domain. Removed the note on provisional email addresses (§1).
 
