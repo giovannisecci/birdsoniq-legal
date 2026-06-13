@@ -1,7 +1,7 @@
 # Privacy Policy — Birdsoniq
 
-**Last updated:** 4 June 2026
-**Document version:** 1.4
+**Last updated:** 14 June 2026
+**Document version:** 1.5
 
 > The complete history of modifications to this Privacy Policy is publicly available on the document's git repository: `https://github.com/giovannisecci/birdsoniq-legal`. Each previous version remains verifiable and downloadable.
 
@@ -194,6 +194,10 @@ Reference privacy policy: `https://payments.google.com/payments/apis-secure/get_
 
 Reference privacy policy: `https://policies.google.com/privacy`.
 
+**Google ML Kit** (Google LLC) — entirely *on-device* processing: before photo classification, the app uses ML Kit object detection to locate the bird within the image. Processing takes place exclusively on the user's device: **no photograph or other data is transmitted to Google** for this function. Component distributed under the Apache 2.0 license.
+
+Reference privacy policy: `https://policies.google.com/privacy`.
+
 ### 5.2 Open scientific sources
 
 **GBIF** (Global Biodiversity Information Facility, based in Copenhagen, Denmark): source of data on geographical distribution and monthly frequency of species, accessible via public API. When the user consults distribution maps, the coordinates are transmitted to GBIF without personal identifiers.
@@ -368,6 +372,8 @@ Changes take effect upon publication of the new version of the document. The dat
 
 **Version history.** All previous versions of the Privacy Policy are publicly available on the document's git repository: `https://github.com/giovannisecci/birdsoniq-legal`. Each version is identified by its git commit with cryptographic hash and verifiable date.
 
+**Main changes in version 1.5 (14 June 2026):** aligned the data-source sections with the attributions shown in the app. Added **Wikidata** as the source of species common (vernacular) names (§15: data bundled offline under the CC0 license). Documented the *on-device* use of **Google ML Kit** to detect the bird in photographs before classification, with no data transmission (§5.1).
+
 **Main changes in version 1.4 (4 June 2026):** separated the pseudonymous identifiers (communityId for community content, installId/SSAID confined to fraud prevention — §3.1, §3.6, §7, §9); community leaderboard synchronization is now subject to the user's explicit consent (§3.6); documented the optional AI Premium cloud photo analysis feature: new §3.11 and §5.5 (Anthropic), updated §2, §3.3, §6 and §7.
 
 **Main changes in version 1.3 (4 June 2026):** incorporated the introduction of optional user accounts (Firebase Authentication: email/password and Google sign-in) and the in-app account deletion feature. Added section §3.10 (user account data); updated §2 (from "no user account" to "optional account"), §3.5, §3.8 (comments and content reports), §5.1, §7 and §9; published the dedicated page `https://legal.birdsoniq.app/account_deletion.html`.
@@ -389,6 +395,8 @@ Birdsoniq integrates data, text, images and audio recordings provided by third-p
 **Photos and taxonomy — iNaturalist.** Species photographs and some taxonomic information are obtained through the iNaturalist APIs. Each photo retains the attribution provided by the platform (author, license, link to the original photo).
 
 **Fallback photos and descriptions — Wikipedia / Wikimedia Commons.** When not available via iNaturalist, cover photos and encyclopedic descriptions are obtained through the Wikipedia APIs. Content is distributed under Creative Commons Attribution-ShareAlike (CC BY-SA) license; attribution in the app refers to the source Wikipedia page.
+
+**Common (vernacular) names — Wikidata.** The common names of species in the 22 supported languages come from Wikidata (Wikimedia Foundation) and are bundled *offline* in the app under the Creative Commons CC0 license (public domain). No call is made to Wikidata servers; no user data is transmitted.
 
 **Conservation status — IUCN Red List.** Species conservation status is obtained through the IUCN Red List v4 API (with an API key configured by the user).
 

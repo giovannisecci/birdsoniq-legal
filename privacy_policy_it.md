@@ -1,7 +1,7 @@
 # Privacy Policy — Birdsoniq
 
-**Ultimo aggiornamento:** 4 giugno 2026
-**Versione documento:** 1.4
+**Ultimo aggiornamento:** 14 giugno 2026
+**Versione documento:** 1.5
 
 > Lo storico completo delle modifiche a questa Privacy Policy è pubblicamente consultabile sul repository git del documento: `https://github.com/giovannisecci/birdsoniq-legal`. Ogni versione precedente resta verificabile e scaricabile.
 
@@ -192,6 +192,10 @@ Privacy policy di riferimento: `https://payments.google.com/payments/apis-secure
 
 Privacy policy di riferimento: `https://policies.google.com/privacy`.
 
+**Google ML Kit** (Google LLC) — elaborazione interamente *on-device*: prima della classificazione fotografica, l'app utilizza il rilevamento oggetti (object detection) di ML Kit per individuare l'uccello all'interno dell'immagine. L'elaborazione avviene esclusivamente sul dispositivo dell'utente: **nessuna fotografia né altro dato viene trasmesso a Google** per questa funzione. Componente distribuito sotto licenza Apache 2.0.
+
+Privacy policy di riferimento: `https://policies.google.com/privacy`.
+
 ### 5.2 Fonti scientifiche aperte
 
 **GBIF** (Global Biodiversity Information Facility, con sede a Copenaghen, Danimarca): fonte dei dati di distribuzione geografica e frequenza mensile delle specie, accessibile via API pubblica. Quando l'utente consulta mappe di distribuzione, le coordinate vengono trasmesse a GBIF senza identificativi personali.
@@ -366,6 +370,8 @@ Le modifiche entrano in vigore al momento della pubblicazione della nuova versio
 
 **Storico delle versioni.** Tutte le versioni precedenti della Privacy Policy sono pubblicamente consultabili sul repository git del documento: `https://github.com/giovannisecci/birdsoniq-legal`. Ciascuna versione è identificata dal proprio commit git con hash crittografico e data verificabile.
 
+**Principali modifiche nella versione 1.5 (14 giugno 2026):** allineate le sezioni sulle fonti alle attribuzioni mostrate nell'app. Aggiunta la fonte **Wikidata** per i nomi comuni (vernacolari) delle specie (§15: dati inclusi offline sotto licenza CC0). Documentato l'uso *on-device* di **Google ML Kit** per il rilevamento dell'uccello nelle fotografie prima della classificazione, senza trasmissione di alcun dato (§5.1).
+
 **Principali modifiche nella versione 1.4 (4 giugno 2026):** separati gli identificativi pseudonimi (communityId per i contenuti community, installId/SSAID confinato alla prevenzione frodi — §3.1, §3.6, §7, §9); la sincronizzazione della classifica community è ora subordinata al consenso esplicito dell'utente (§3.6); documentata la funzione facoltativa AI Premium di analisi fotografica cloud: nuove §3.11 e §5.5 (Anthropic), aggiornati §2, §3.3, §6 e §7.
 
 **Principali modifiche nella versione 1.3 (4 giugno 2026):** recepita l'introduzione degli account utente facoltativi (Firebase Authentication: email/password e accesso Google) e della funzione di eliminazione account in-app. Aggiunta la sezione §3.10 (dati dell'account utente); aggiornati §2 (da "nessun account utente" ad "account facoltativo"), §3.5, §3.8 (commenti e segnalazioni di contenuti), §5.1, §7 e §9; pubblicata la pagina dedicata `https://legal.birdsoniq.app/account_deletion.html`.
@@ -387,6 +393,8 @@ Birdsoniq integra dati, testi, immagini e registrazioni audio forniti da progett
 **Foto e tassonomia — iNaturalist.** Le fotografie delle specie e parte delle informazioni tassonomiche sono ottenute dalle API di iNaturalist. Ciascuna foto mantiene l'attribuzione fornita dalla piattaforma (autore, licenza, link alla foto originale).
 
 **Foto di fallback e descrizioni — Wikipedia / Wikimedia Commons.** Quando non disponibili tramite iNaturalist, le foto di copertina e le descrizioni enciclopediche sono ottenute dalle API di Wikipedia. I contenuti sono distribuiti sotto licenza Creative Commons Attribution-ShareAlike (CC BY-SA); l'attribuzione nell'app rimanda alla pagina Wikipedia di origine.
+
+**Nomi comuni (vernacolari) — Wikidata.** I nomi comuni delle specie nelle 22 lingue supportate provengono da Wikidata (Wikimedia Foundation) e sono inclusi *offline* nell'app sotto licenza Creative Commons CC0 (pubblico dominio). Non viene effettuata alcuna chiamata ai server di Wikidata; nessun dato dell'utente viene trasmesso.
 
 **Stato di conservazione — IUCN Red List.** Lo stato di conservazione delle specie è ottenuto tramite l'API IUCN Red List v4 (con chiave API configurata dall'utente).
 
